@@ -76,7 +76,7 @@ def build_site():
     with open(os.path.join(SRC_DIR, 'templates', 'footer.html'), 'r', encoding='utf-8') as f:
         footer_html = f.read()
 
-    pages = ['index', 'chambres', 'services', 'galerie', 'contact']
+    pages = ['index', 'chambres', 'services', 'galerie', 'contact', 'acces']
     sitemap_urls = []
     base_url = "https://arc-en-ciel.com" 
     
@@ -135,6 +135,49 @@ def build_site():
                     </div>
                     """
 
+            seasons_html = ""
+            if "seasons" in page_context and type(page_context["seasons"]) is list:
+                for s in page_context["seasons"]:
+                    seasons_html += f"""
+                    <div class="season-card">
+                        <h4>{s.get('name', '')}</h4>
+                        <p>{s.get('months', '')}</p>
+                    </div>
+                    """
+
+            practical_info_html = ""
+            if "practical_info" in page_context and type(page_context["practical_info"]) is list:
+                for p in page_context["practical_info"]:
+                    practical_info_html += f"""
+                    <div class="info-card">
+                        <div class="info-icon">{p.get('icon', '')}</div>
+                        <div>
+                            <h4>{p.get('title', '')}</h4>
+                            <p>{p.get('text', '')}</p>
+                        </div>
+                    </div>
+                    """
+                    
+            access_modes_html = ""
+            if "access_modes" in page_context and type(page_context["access_modes"]) is list:
+                for a in page_context["access_modes"]:
+                    access_modes_html += f"""
+                    <div class="access-card">
+                        <h4>{a.get('mode', '')}</h4>
+                        <p>{a.get('desc', '')}</p>
+                    </div>
+                    """
+                    
+            attractions_html = ""
+            if "attractions" in page_context and type(page_context["attractions"]) is list:
+                for a in page_context["attractions"]:
+                    attractions_html += f"""
+                    <div class="attraction-card">
+                        <h4>{a.get('name', '')}</h4>
+                        <span>{a.get('distance', '')}</span>
+                    </div>
+                    """
+
             context = {
                 "global": global_data,
                 "page": page_context,
@@ -143,6 +186,10 @@ def build_site():
                 "seo_json_ld": json_ld,
                 "rooms_html": rooms_html,
                 "reviews_html": reviews_html,
+                "seasons_html": seasons_html,
+                "practical_info_html": practical_info_html,
+                "access_modes_html": access_modes_html,
+                "attractions_html": attractions_html,
                 "base_path": BASE_PATH
             }
             

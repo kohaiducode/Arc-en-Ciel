@@ -9,7 +9,43 @@
   "chambres": {
     "title": "Nos Chambres",
     "seo_title": "Chambres - Hôtel Arc en Ciel Eze",
-    "seo_description": "Des chambres climatisées, lumineuses, avec tout le confort à Eze Village."
+    "seo_description": "Des chambres climatisées, lumineuses, avec tout le confort à Eze Village.",
+    "seasons_title": "Tarifs & Saisons",
+    "seasons": [
+      {"name": "Basse saison (115€)", "months": "Janvier, Février, Mars, Novembre, Décembre"},
+      {"name": "Moyenne saison (130€)", "months": "Avril, Mai, Juin, Septembre, Octobre"},
+      {"name": "Haute saison (150€)", "months": "Juillet, Août"}
+    ],
+    "practical_info_title": "Informations Pratiques",
+    "practical_info": [
+      {"icon": "🕒", "title": "Horaires", "text": "Arrivée à partir de 14h. Départ au plus tard à 11h."},
+      {"icon": "🛎️", "title": "Réception", "text": "Ouverte de 8h30 à 18h30."},
+      {"icon": "💶", "title": "Taxe de séjour", "text": "2,30 € par nuit et par personne."},
+      {"icon": "📅", "title": "Conditions de réservation", "text": "Toute réservation nécessite un dépôt de garantie d'au moins 1 nuit. Annulation gratuite jusqu'à 7 jours avant l'arrivée."},
+      {"icon": "🐾", "title": "Animaux", "text": "Les animaux ne sont pas les bienvenus (bien que nous les aimions beaucoup)."}
+    ]
+  },
+  "acces": {
+    "title": "Accès & Tourisme",
+    "seo_title": "Accès et Tourisme - Hôtel Arc en Ciel Eze",
+    "seo_description": "Comment venir à l'Hôtel Arc en Ciel à Eze Village. Découvrez les plages et attractions à proximité.",
+    "intro": "Idéalement placé sur la moyenne corniche entre Nice (8 km) et Monaco (6 km), Eze Village, lieu magique planté dans l'azur, a su préserver une atmosphère d'authenticité.",
+    "access_title": "Comment venir ?",
+    "access_modes": [
+      {"mode": "En Voiture", "desc": "Autoroute A8 sortie 57 (La Turbie), prendre la direction Eze Village. Parking proche de l'office de tourisme."},
+      {"mode": "En Avion", "desc": "Aéroport international de Nice Côte d'Azur (25 km). Transfert possible par taxi ou bus."},
+      {"mode": "En Bus", "desc": "Autobus régionaux depuis l'aéroport de Nice. Arrêt à 50m de l'hôtel."},
+      {"mode": "En Train", "desc": "Gares SNCF les plus proches : Nice (8 km) ou Monaco (7 km). Gare d'Eze à 2.2 km."}
+    ],
+    "tourism_title": "À découvrir aux alentours",
+    "attractions": [
+      {"name": "Village d'Eze & Office de tourisme", "distance": "Sur place"},
+      {"name": "Plage d'Èze", "distance": "2.1 km"},
+      {"name": "Plage des Criques du Cap Estel", "distance": "2.7 km"},
+      {"name": "Plage de Mala", "distance": "3.3 km"},
+      {"name": "Place Garibaldi (Nice)", "distance": "9 km"},
+      {"name": "Monaco (Héliport)", "distance": "6 km"}
+    ]
   },
   "services": {
     "title": "Nos Services",
