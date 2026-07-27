@@ -139,15 +139,16 @@ def build_site():
                 "global": global_data,
                 "page": page_context,
                 "lang": lang,
-                "header": header_html,
-                "footer": footer_html,
-                "content": content_html,
                 "seo_hreflang": hreflang_tags,
                 "seo_json_ld": json_ld,
                 "rooms_html": rooms_html,
                 "reviews_html": reviews_html,
                 "base_path": BASE_PATH
             }
+            
+            # Pre-render header and footer so their variables are evaluated
+            context["header"] = render_template(header_html, context)
+            context["footer"] = render_template(footer_html, context)
             
             rendered_content = render_template(content_html, context)
             context["content"] = rendered_content
