@@ -30,11 +30,6 @@
         <div class="logo">
             <a href="/Arc-en-Ciel/fr/"><img src="/Arc-en-Ciel/assets/images/logo.webp" alt="Arc en Ciel" style="max-height: 50px;"></a>
         </div>
-        <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false">
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-        </button>
         <nav class="main-nav">
             <ul>
                 <li><a href="/Arc-en-Ciel/fr/">Accueil</a></li>
@@ -43,10 +38,24 @@
                 <li><a href="/Arc-en-Ciel/fr/galerie/">Galerie</a></li>
                 <li><a href="/Arc-en-Ciel/fr/acces/">Accès & Tourisme</a></li>
                 <li><a href="/Arc-en-Ciel/fr/contact/">Contact</a></li>
+                <!-- Mobile only contact info inside menu -->
+                <li class="mobile-contact">
+                    <a href="tel:+33 6 87 20 37 20" style="font-size:1.1rem; color: var(--primary);">📞 +33 6 87 20 37 20</a>
+                    <a href="mailto:reservation@arcencieleze.fr" style="font-size:1.1rem; color: var(--primary);">✉️ reservation@arcencieleze.fr</a>
+                    <span style="font-size:0.9rem; margin-top:10px;">📍 Avenue du Jardin Exotique, 06360 EZE VILLAGE, France</span>
+                </li>
             </ul>
         </nav>
-        <div class="lang-switcher">
-            <a href="/Arc-en-Ciel/fr/">FR</a> | <a href="/Arc-en-Ciel/en/">EN</a>
+        <div class="header-actions">
+            <div class="lang-switcher">
+                <a href="/Arc-en-Ciel/fr/">FR</a> | <a href="/Arc-en-Ciel/en/">EN</a>
+            </div>
+            <a href="/Arc-en-Ciel/fr/contact/" class="btn-primary">Réserver</a>
+            <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
         </div>
     </div>
 </header>
@@ -65,17 +74,20 @@
     <div class="container">
         <h2 class="section-title">Pourquoi nous choisir ?</h2>
         <div class="grid-3">
-            <div style="text-align: center;">
-                <h3 style="color: var(--accent);">Emplacement Idéal</h3>
-                <p>Au cœur de la ville, proche de toutes les commodités et attractions majeures.</p>
+            <div class="card" style="text-align: center;">
+                <div class="img-placeholder" style="height: 150px;">Image suggérée : Vue de l'hôtel ou d'Eze</div>
+                <h3 style="color: var(--primary);">Emplacement Idéal</h3>
+                <p>Au pied d'Eze Village, idéalement situé sur la corniche entre Nice et Monaco.</p>
             </div>
-            <div style="text-align: center;">
-                <h3 style="color: var(--accent);">Confort Premium</h3>
-                <p>Des chambres spacieuses, une literie haut de gamme et un service attentionné.</p>
+            <div class="card" style="text-align: center;">
+                <div class="img-placeholder" style="height: 150px;">Image suggérée : Intérieur d'une chambre lumineuse</div>
+                <h3 style="color: var(--primary);">Confort & Authenticité</h3>
+                <p>Des chambres climatisées, lumineuses, avec tout le confort moderne et un charme azuréen.</p>
             </div>
-            <div style="text-align: center;">
-                <h3 style="color: var(--accent);">Spa & Bien-être</h3>
-                <p>Détendez-vous dans notre espace spa équipé d'un sauna et d'une piscine chauffée.</p>
+            <div class="card" style="text-align: center;">
+                <div class="img-placeholder" style="height: 150px;">Image suggérée : Plage, restaurant ou petit déjeuner</div>
+                <h3 style="color: var(--primary);">Services & Détente</h3>
+                <p>Profitez de notre petite restauration, de notre bar et d'un accès facile aux plages alentours.</p>
             </div>
         </div>
     </div>
@@ -120,20 +132,32 @@
 
     <footer class="site-footer">
     <div class="container">
-        <div class="footer-content grid-2">
-            <div>
-                <img src="/Arc-en-Ciel/assets/images/logo.webp" alt="Arc en Ciel" style="max-height: 60px; margin-bottom: var(--space-sm);">
+        <div class="footer-grid">
+            <div class="footer-col footer-logo">
+                <img src="/Arc-en-Ciel/assets/images/logo.webp" alt="Arc en Ciel">
                 <h4>Hôtel Arc en Ciel</h4>
-                <p>Avenue du Jardin Exotique, 06360 EZE VILLAGE, France</p>
+                <p style="color: var(--border);">Une halte reposante au pied du village d'Eze, idéalement situé entre Nice et Monaco.</p>
+                <div class="social-links" style="justify-content: flex-start;">
+                    <!-- Placeholders for future social links if needed -->
+                </div>
             </div>
-            <div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <a href="/Arc-en-Ciel/fr/">Accueil</a>
+                <a href="/Arc-en-Ciel/fr/chambres/">Chambres</a>
+                <a href="/Arc-en-Ciel/fr/services/">Services</a>
+                <a href="/Arc-en-Ciel/fr/acces/">Accès & Tourisme</a>
+                <a href="/Arc-en-Ciel/fr/contact/">Contact & Réservation</a>
+            </div>
+            <div class="footer-col">
                 <h4>Contact</h4>
-                <p>Tel: +33 6 87 20 37 20</p>
-                <p>Email: reservation@arcencieleze.fr</p>
+                <p>📍 Avenue du Jardin Exotique, 06360 EZE VILLAGE, France</p>
+                <p>📞 +33 6 87 20 37 20</p>
+                <p>✉️ reservation@arcencieleze.fr</p>
             </div>
         </div>
         <div class="copyright">
-            <p>&copy; 2026 Hôtel Arc en Ciel. Tous droits réservés.</p>
+            <p>&copy; 2026 Hôtel Arc en Ciel. Tous droits réservés. | <a href="#" style="color: #6B7280; text-decoration: underline;">Mentions légales</a></p>
         </div>
     </div>
 </footer>

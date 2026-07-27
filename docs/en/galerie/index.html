@@ -30,11 +30,6 @@
         <div class="logo">
             <a href="/Arc-en-Ciel/en/"><img src="/Arc-en-Ciel/assets/images/logo.webp" alt="Arc en Ciel" style="max-height: 50px;"></a>
         </div>
-        <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false">
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-        </button>
         <nav class="main-nav">
             <ul>
                 <li><a href="/Arc-en-Ciel/en/">Accueil</a></li>
@@ -43,10 +38,24 @@
                 <li><a href="/Arc-en-Ciel/en/galerie/">Galerie</a></li>
                 <li><a href="/Arc-en-Ciel/en/acces/">Accès & Tourisme</a></li>
                 <li><a href="/Arc-en-Ciel/en/contact/">Contact</a></li>
+                <!-- Mobile only contact info inside menu -->
+                <li class="mobile-contact">
+                    <a href="tel:+33 1 23 45 67 89" style="font-size:1.1rem; color: var(--primary);">📞 +33 1 23 45 67 89</a>
+                    <a href="mailto:contact@arcenciel-hotel.com" style="font-size:1.1rem; color: var(--primary);">✉️ contact@arcenciel-hotel.com</a>
+                    <span style="font-size:0.9rem; margin-top:10px;">📍 123 Fictive Street, 75000 Paris, France</span>
+                </li>
             </ul>
         </nav>
-        <div class="lang-switcher">
-            <a href="/Arc-en-Ciel/fr/">FR</a> | <a href="/Arc-en-Ciel/en/">EN</a>
+        <div class="header-actions">
+            <div class="lang-switcher">
+                <a href="/Arc-en-Ciel/fr/">FR</a> | <a href="/Arc-en-Ciel/en/">EN</a>
+            </div>
+            <a href="/Arc-en-Ciel/en/contact/" class="btn-primary">Réserver</a>
+            <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
         </div>
     </div>
 </header>
@@ -102,20 +111,32 @@
 
     <footer class="site-footer">
     <div class="container">
-        <div class="footer-content grid-2">
-            <div>
-                <img src="/Arc-en-Ciel/assets/images/logo.webp" alt="Arc en Ciel" style="max-height: 60px; margin-bottom: var(--space-sm);">
+        <div class="footer-grid">
+            <div class="footer-col footer-logo">
+                <img src="/Arc-en-Ciel/assets/images/logo.webp" alt="Arc en Ciel">
                 <h4>Hotel Arc en Ciel</h4>
-                <p>123 Fictive Street, 75000 Paris, France</p>
+                <p style="color: var(--border);">Une halte reposante au pied du village d'Eze, idéalement situé entre Nice et Monaco.</p>
+                <div class="social-links" style="justify-content: flex-start;">
+                    <!-- Placeholders for future social links if needed -->
+                </div>
             </div>
-            <div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <a href="/Arc-en-Ciel/en/">Accueil</a>
+                <a href="/Arc-en-Ciel/en/chambres/">Chambres</a>
+                <a href="/Arc-en-Ciel/en/services/">Services</a>
+                <a href="/Arc-en-Ciel/en/acces/">Accès & Tourisme</a>
+                <a href="/Arc-en-Ciel/en/contact/">Contact & Réservation</a>
+            </div>
+            <div class="footer-col">
                 <h4>Contact</h4>
-                <p>Tel: +33 1 23 45 67 89</p>
-                <p>Email: contact@arcenciel-hotel.com</p>
+                <p>📍 123 Fictive Street, 75000 Paris, France</p>
+                <p>📞 +33 1 23 45 67 89</p>
+                <p>✉️ contact@arcenciel-hotel.com</p>
             </div>
         </div>
         <div class="copyright">
-            <p>&copy; 2026 Hotel Arc en Ciel. Tous droits réservés.</p>
+            <p>&copy; 2026 Hotel Arc en Ciel. Tous droits réservés. | <a href="#" style="color: #6B7280; text-decoration: underline;">Mentions légales</a></p>
         </div>
     </div>
 </footer>

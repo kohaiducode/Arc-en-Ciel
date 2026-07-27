@@ -30,11 +30,6 @@
         <div class="logo">
             <a href="/Arc-en-Ciel/fr/"><img src="/Arc-en-Ciel/assets/images/logo.webp" alt="Arc en Ciel" style="max-height: 50px;"></a>
         </div>
-        <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false">
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-        </button>
         <nav class="main-nav">
             <ul>
                 <li><a href="/Arc-en-Ciel/fr/">Accueil</a></li>
@@ -43,10 +38,24 @@
                 <li><a href="/Arc-en-Ciel/fr/galerie/">Galerie</a></li>
                 <li><a href="/Arc-en-Ciel/fr/acces/">Accès & Tourisme</a></li>
                 <li><a href="/Arc-en-Ciel/fr/contact/">Contact</a></li>
+                <!-- Mobile only contact info inside menu -->
+                <li class="mobile-contact">
+                    <a href="tel:+33 6 87 20 37 20" style="font-size:1.1rem; color: var(--primary);">📞 +33 6 87 20 37 20</a>
+                    <a href="mailto:reservation@arcencieleze.fr" style="font-size:1.1rem; color: var(--primary);">✉️ reservation@arcencieleze.fr</a>
+                    <span style="font-size:0.9rem; margin-top:10px;">📍 Avenue du Jardin Exotique, 06360 EZE VILLAGE, France</span>
+                </li>
             </ul>
         </nav>
-        <div class="lang-switcher">
-            <a href="/Arc-en-Ciel/fr/">FR</a> | <a href="/Arc-en-Ciel/en/">EN</a>
+        <div class="header-actions">
+            <div class="lang-switcher">
+                <a href="/Arc-en-Ciel/fr/">FR</a> | <a href="/Arc-en-Ciel/en/">EN</a>
+            </div>
+            <a href="/Arc-en-Ciel/fr/contact/" class="btn-primary">Réserver</a>
+            <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
         </div>
     </div>
 </header>
@@ -97,17 +106,17 @@
         <h2 class="section-title" style="margin-top: var(--space-2xl);">Tarifs & Saisons</h2>
         <div class="grid-3" style="margin-bottom: var(--space-2xl);">
             
-                    <div class="season-card">
+                    <div class="card season-card">
                         <h4>Basse saison (115€)</h4>
                         <p>Janvier, Février, Mars, Novembre, Décembre</p>
                     </div>
                     
-                    <div class="season-card">
+                    <div class="card season-card">
                         <h4>Moyenne saison (130€)</h4>
                         <p>Avril, Mai, Juin, Septembre, Octobre</p>
                     </div>
                     
-                    <div class="season-card">
+                    <div class="card season-card">
                         <h4>Haute saison (150€)</h4>
                         <p>Juillet, Août</p>
                     </div>
@@ -117,7 +126,7 @@
         <h2 class="section-title">Informations Pratiques</h2>
         <div class="grid-2">
             
-                    <div class="info-card">
+                    <div class="card info-card">
                         <div class="info-icon">🕒</div>
                         <div>
                             <h4>Horaires</h4>
@@ -125,7 +134,7 @@
                         </div>
                     </div>
                     
-                    <div class="info-card">
+                    <div class="card info-card">
                         <div class="info-icon">🛎️</div>
                         <div>
                             <h4>Réception</h4>
@@ -133,7 +142,7 @@
                         </div>
                     </div>
                     
-                    <div class="info-card">
+                    <div class="card info-card">
                         <div class="info-icon">💶</div>
                         <div>
                             <h4>Taxe de séjour</h4>
@@ -141,7 +150,7 @@
                         </div>
                     </div>
                     
-                    <div class="info-card">
+                    <div class="card info-card">
                         <div class="info-icon">📅</div>
                         <div>
                             <h4>Conditions de réservation</h4>
@@ -149,7 +158,7 @@
                         </div>
                     </div>
                     
-                    <div class="info-card">
+                    <div class="card info-card">
                         <div class="info-icon">🐾</div>
                         <div>
                             <h4>Animaux</h4>
@@ -170,20 +179,32 @@
 
     <footer class="site-footer">
     <div class="container">
-        <div class="footer-content grid-2">
-            <div>
-                <img src="/Arc-en-Ciel/assets/images/logo.webp" alt="Arc en Ciel" style="max-height: 60px; margin-bottom: var(--space-sm);">
+        <div class="footer-grid">
+            <div class="footer-col footer-logo">
+                <img src="/Arc-en-Ciel/assets/images/logo.webp" alt="Arc en Ciel">
                 <h4>Hôtel Arc en Ciel</h4>
-                <p>Avenue du Jardin Exotique, 06360 EZE VILLAGE, France</p>
+                <p style="color: var(--border);">Une halte reposante au pied du village d'Eze, idéalement situé entre Nice et Monaco.</p>
+                <div class="social-links" style="justify-content: flex-start;">
+                    <!-- Placeholders for future social links if needed -->
+                </div>
             </div>
-            <div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <a href="/Arc-en-Ciel/fr/">Accueil</a>
+                <a href="/Arc-en-Ciel/fr/chambres/">Chambres</a>
+                <a href="/Arc-en-Ciel/fr/services/">Services</a>
+                <a href="/Arc-en-Ciel/fr/acces/">Accès & Tourisme</a>
+                <a href="/Arc-en-Ciel/fr/contact/">Contact & Réservation</a>
+            </div>
+            <div class="footer-col">
                 <h4>Contact</h4>
-                <p>Tel: +33 6 87 20 37 20</p>
-                <p>Email: reservation@arcencieleze.fr</p>
+                <p>📍 Avenue du Jardin Exotique, 06360 EZE VILLAGE, France</p>
+                <p>📞 +33 6 87 20 37 20</p>
+                <p>✉️ reservation@arcencieleze.fr</p>
             </div>
         </div>
         <div class="copyright">
-            <p>&copy; 2026 Hôtel Arc en Ciel. Tous droits réservés.</p>
+            <p>&copy; 2026 Hôtel Arc en Ciel. Tous droits réservés. | <a href="#" style="color: #6B7280; text-decoration: underline;">Mentions légales</a></p>
         </div>
     </div>
 </footer>
