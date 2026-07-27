@@ -1,7 +1,7 @@
 :root {
   /* Colors - Premium Palette */
-  --primary: #1A202C;
-  --secondary: #2D3748;
+  --primary: #7092B1;
+  --secondary: #2C3E50;
   --accent: #C5A47E; /* Elegant Gold */
   --accent-hover: #A88661;
   --bg-light: #F7FAFC;
@@ -98,10 +98,11 @@ img {
 
 .logo a {
   font-family: var(--font-heading);
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: var(--primary);
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 .main-nav ul {
@@ -140,6 +141,9 @@ img {
   height: 70vh;
   min-height: 500px;
   background-color: var(--primary);
+  background-image: url('../images/Vue de dehors plus belle.webp');
+  background-size: cover;
+  background-position: center;
   position: relative;
   display: flex;
   align-items: center;
@@ -164,13 +168,13 @@ img {
 
 .hero h1 {
   color: var(--bg-white);
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(2rem, 5vw, 3.5rem);
   margin-bottom: var(--space-sm);
   text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
 .hero p {
-  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-size: clamp(1rem, 2vw, 1.25rem);
   margin-bottom: var(--space-lg);
   font-weight: 300;
 }
@@ -228,6 +232,30 @@ img {
   }
   .grid-3 {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .site-header .container {
+    flex-direction: column;
+    height: auto;
+    padding: var(--space-sm) 0;
+    gap: var(--space-sm);
+  }
+  .main-nav ul {
+    gap: var(--space-md);
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .grid-2, .grid-3 {
+    grid-template-columns: 1fr;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .footer-content {
+    text-align: center;
+    gap: var(--space-xl);
   }
 }
 
