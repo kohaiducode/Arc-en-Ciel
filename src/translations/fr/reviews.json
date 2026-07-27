@@ -1,0 +1,20 @@
+[
+  {
+    "rating": 5,
+    "title": "Séjour exceptionnel",
+    "text": "Le personnel était aux petits soins. La chambre était impeccable et le petit-déjeuner délicieux.",
+    "author": "Jean Dupont"
+  },
+  {
+    "rating": 4,
+    "title": "Très bon hôtel",
+    "text": "Emplacement idéal pour visiter la région. Literie très confortable.",
+    "author": "Marie Martin"
+  },
+  {
+    "rating": 5,
+    "title": "Une parenthèse enchantée",
+    "text": "Tout était parfait de A à Z. Nous reviendrons avec grand plaisir.",
+    "author": "Pierre & Sophie"
+  }
+]

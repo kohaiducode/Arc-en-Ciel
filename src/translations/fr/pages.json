@@ -1,0 +1,33 @@
+{
+  "index": {
+    "title": "Accueil",
+    "seo_title": "Hôtel Arc en Ciel | Votre séjour inoubliable",
+    "seo_description": "Découvrez l'hôtel Arc en Ciel, un établissement de charme pour un séjour inoubliable.",
+    "hero_title": "Bienvenue à l'Arc en Ciel",
+    "hero_subtitle": "L'élégance et le confort à votre portée"
+  },
+  "chambres": {
+    "title": "Nos Chambres",
+    "seo_title": "Chambres - Hôtel Arc en Ciel",
+    "seo_description": "Découvrez nos chambres confortables et équipées."
+  },
+  "services": {
+    "title": "Nos Services",
+    "seo_title": "Services - Hôtel Arc en Ciel",
+    "seo_description": "Profitez de notre restaurant, spa et autres activités."
+  },
+  "galerie": {
+    "title": "Galerie Photo",
+    "seo_title": "Galerie - Hôtel Arc en Ciel",
+    "seo_description": "Découvrez l'hôtel Arc en Ciel en images."
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "seo_title": "Contact - Hôtel Arc en Ciel",
+    "seo_description": "Contactez l'hôtel Arc en Ciel pour toute réservation ou question.",
+    "form_name": "Votre Nom",
+    "form_email": "Votre Email",
+    "form_message": "Votre Message",
+    "form_submit": "Envoyer"
+  }
+}

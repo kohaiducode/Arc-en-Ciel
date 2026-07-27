@@ -1,0 +1,36 @@
+<section class="hero">
+    <div class="hero-content">
+        <h1>{{page.hero_title}}</h1>
+        <p>{{page.hero_subtitle}}</p>
+        <a href="{{global.booking_url}}" class="btn-primary" target="_blank" rel="noopener">Réserver Maintenant</a>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Pourquoi nous choisir ?</h2>
+        <div class="grid-3">
+            <div style="text-align: center;">
+                <h3 style="color: var(--accent);">Emplacement Idéal</h3>
+                <p>Au cœur de la ville, proche de toutes les commodités et attractions majeures.</p>
+            </div>
+            <div style="text-align: center;">
+                <h3 style="color: var(--accent);">Confort Premium</h3>
+                <p>Des chambres spacieuses, une literie haut de gamme et un service attentionné.</p>
+            </div>
+            <div style="text-align: center;">
+                <h3 style="color: var(--accent);">Spa & Bien-être</h3>
+                <p>Détendez-vous dans notre espace spa équipé d'un sauna et d'une piscine chauffée.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background-color: var(--bg-white);">
+    <div class="container">
+        <h2 class="section-title">Ce que nos clients disent</h2>
+        <div class="grid-3">
+            {{reviews_html}}
+        </div>
+    </div>
+</section>

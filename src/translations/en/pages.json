@@ -1,0 +1,33 @@
+{
+  "index": {
+    "title": "Home",
+    "seo_title": "Hotel Arc en Ciel | Your unforgettable stay",
+    "seo_description": "Discover Hotel Arc en Ciel, a charming establishment for an unforgettable stay.",
+    "hero_title": "Welcome to Arc en Ciel",
+    "hero_subtitle": "Elegance and comfort at your fingertips"
+  },
+  "chambres": {
+    "title": "Our Rooms",
+    "seo_title": "Rooms - Hotel Arc en Ciel",
+    "seo_description": "Discover our comfortable and fully equipped rooms."
+  },
+  "services": {
+    "title": "Our Services",
+    "seo_title": "Services - Hotel Arc en Ciel",
+    "seo_description": "Enjoy our restaurant, spa and other activities."
+  },
+  "galerie": {
+    "title": "Photo Gallery",
+    "seo_title": "Gallery - Hotel Arc en Ciel",
+    "seo_description": "Discover Hotel Arc en Ciel in pictures."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "seo_title": "Contact - Hotel Arc en Ciel",
+    "seo_description": "Contact Hotel Arc en Ciel for any reservation or question.",
+    "form_name": "Your Name",
+    "form_email": "Your Email",
+    "form_message": "Your Message",
+    "form_submit": "Send"
+  }
+}

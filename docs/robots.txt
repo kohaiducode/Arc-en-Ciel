@@ -1,0 +1,1 @@
+User-agent: *\nAllow: /\nSitemap: https://arc-en-ciel.com/sitemap.xml\n

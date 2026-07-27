@@ -1,0 +1,29 @@
+[
+  {
+    "id": "chambre-standard",
+    "name": "Chambre Standard",
+    "area_sqm": 20,
+    "capacity": 2,
+    "amenities": ["Wi-Fi Rapide", "TV Écran Plat", "Climatisation", "Coffre-fort"],
+    "image": "room-standard.webp",
+    "cta_text": "Réserver"
+  },
+  {
+    "id": "chambre-superieure",
+    "name": "Chambre Supérieure",
+    "area_sqm": 28,
+    "capacity": 2,
+    "amenities": ["Wi-Fi Rapide", "TV Écran Plat 4K", "Climatisation", "Mini-bar", "Vue sur Jardin"],
+    "image": "room-superior.webp",
+    "cta_text": "Réserver"
+  },
+  {
+    "id": "suite-familiale",
+    "name": "Suite Familiale",
+    "area_sqm": 45,
+    "capacity": 4,
+    "amenities": ["Wi-Fi Rapide", "2 TV Écran Plat", "Climatisation", "Coin Salon", "Baignoire"],
+    "image": "suite-family.webp",
+    "cta_text": "Réserver"
+  }
+]

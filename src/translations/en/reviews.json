@@ -1,0 +1,20 @@
+[
+  {
+    "rating": 5,
+    "title": "Exceptional stay",
+    "text": "The staff was very caring. The room was impeccable and the breakfast delicious.",
+    "author": "Jean Dupont"
+  },
+  {
+    "rating": 4,
+    "title": "Very good hotel",
+    "text": "Ideal location to visit the region. Very comfortable bedding.",
+    "author": "Marie Martin"
+  },
+  {
+    "rating": 5,
+    "title": "An enchanted parenthesis",
+    "text": "Everything was perfect from A to Z. We will return with great pleasure.",
+    "author": "Pierre & Sophie"
+  }
+]

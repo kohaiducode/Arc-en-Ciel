@@ -1,0 +1,12 @@
+{
+  "hotel_name": "Hôtel Arc en Ciel",
+  "address": "123 Rue Fictive, 75000 Paris, France",
+  "gps": {"lat": 48.8566, "lng": 2.3522},
+  "phone": "+33 1 23 45 67 89",
+  "email": "contact@arcenciel-hotel.com",
+  "booking_url": "https://booking.com/hotel/arc-en-ciel",
+  "socials": {
+    "instagram": "https://instagram.com/...",
+    "facebook": "https://facebook.com/..."
+  }
+}

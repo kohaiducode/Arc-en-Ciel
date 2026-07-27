@@ -1,0 +1,132 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "src/assets/images"
+public_folder: "/assets/images"
+
+locale: 'fr'
+
+collections:
+  - name: "global"
+    label: "Paramètres Globaux"
+    files:
+      - label: "Français"
+        name: "fr_global"
+        file: "src/translations/fr/global.json"
+        fields:
+          - {label: "Nom de l'hôtel", name: "hotel_name", widget: "string"}
+          - {label: "Adresse", name: "address", widget: "string"}
+          - label: "Coordonnées GPS"
+            name: "gps"
+            widget: "object"
+            fields:
+              - {label: "Latitude", name: "lat", widget: "number"}
+              - {label: "Longitude", name: "lng", widget: "number"}
+          - {label: "Téléphone", name: "phone", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "URL de réservation", name: "booking_url", widget: "string"}
+          - label: "Réseaux Sociaux"
+            name: "socials"
+            widget: "object"
+            fields:
+              - {label: "Instagram", name: "instagram", widget: "string", required: false}
+              - {label: "Facebook", name: "facebook", widget: "string", required: false}
+      - label: "English"
+        name: "en_global"
+        file: "src/translations/en/global.json"
+        fields:
+          - {label: "Nom de l'hôtel", name: "hotel_name", widget: "string"}
+          - {label: "Adresse", name: "address", widget: "string"}
+          - label: "Coordonnées GPS"
+            name: "gps"
+            widget: "object"
+            fields:
+              - {label: "Latitude", name: "lat", widget: "number"}
+              - {label: "Longitude", name: "lng", widget: "number"}
+          - {label: "Téléphone", name: "phone", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "URL de réservation", name: "booking_url", widget: "string"}
+          - label: "Réseaux Sociaux"
+            name: "socials"
+            widget: "object"
+            fields:
+              - {label: "Instagram", name: "instagram", widget: "string", required: false}
+              - {label: "Facebook", name: "facebook", widget: "string", required: false}
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Français"
+        name: "fr_pages"
+        file: "src/translations/fr/pages.json"
+        fields:
+          - label: "Accueil"
+            name: "index"
+            widget: "object"
+            fields:
+              - {label: "Titre de la page", name: "title", widget: "string"}
+              - {label: "Titre SEO", name: "seo_title", widget: "string"}
+              - {label: "Description SEO", name: "seo_description", widget: "text"}
+              - {label: "Titre Hero", name: "hero_title", widget: "string"}
+              - {label: "Sous-titre Hero", name: "hero_subtitle", widget: "string"}
+          - label: "Chambres"
+            name: "chambres"
+            widget: "object"
+            fields:
+              - {label: "Titre de la page", name: "title", widget: "string"}
+              - {label: "Titre SEO", name: "seo_title", widget: "string"}
+              - {label: "Description SEO", name: "seo_description", widget: "text"}
+          - label: "Services"
+            name: "services"
+            widget: "object"
+            fields:
+              - {label: "Titre de la page", name: "title", widget: "string"}
+              - {label: "Titre SEO", name: "seo_title", widget: "string"}
+              - {label: "Description SEO", name: "seo_description", widget: "text"}
+          - label: "Galerie"
+            name: "galerie"
+            widget: "object"
+            fields:
+              - {label: "Titre de la page", name: "title", widget: "string"}
+              - {label: "Titre SEO", name: "seo_title", widget: "string"}
+              - {label: "Description SEO", name: "seo_description", widget: "text"}
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - {label: "Titre de la page", name: "title", widget: "string"}
+              - {label: "Titre SEO", name: "seo_title", widget: "string"}
+              - {label: "Description SEO", name: "seo_description", widget: "text"}
+              - {label: "Texte champ Nom", name: "form_name", widget: "string"}
+              - {label: "Texte champ Email", name: "form_email", widget: "string"}
+              - {label: "Texte champ Message", name: "form_message", widget: "string"}
+              - {label: "Texte bouton Envoyer", name: "form_submit", widget: "string"}
+
+  - name: "rooms_fr"
+    label: "Chambres (FR)"
+    folder: "src/translations/fr"
+    extension: "json"
+    format: "json"
+    create: true
+    identifier_field: "id"
+    fields:
+      - {label: "ID", name: "id", widget: "string"}
+      - {label: "Nom", name: "name", widget: "string"}
+      - {label: "Superficie (m²)", name: "area_sqm", widget: "number"}
+      - {label: "Capacité", name: "capacity", widget: "number"}
+      - {label: "Equipements", name: "amenities", widget: "list"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Texte CTA", name: "cta_text", widget: "string"}
+
+  - name: "reviews_fr"
+    label: "Avis (FR)"
+    folder: "src/translations/fr"
+    extension: "json"
+    format: "json"
+    create: true
+    fields:
+      - {label: "Note sur 5", name: "rating", widget: "number"}
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Texte", name: "text", widget: "text"}
+      - {label: "Auteur", name: "author", widget: "string"}

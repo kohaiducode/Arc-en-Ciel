@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Hôtel Arc en Ciel</title>
+    <meta name="description" content="Profitez de notre restaurant, spa et autres activités.">
+    
+    <!-- SEO Hreflang Tags -->
+    <link rel="alternate" hreflang="fr" href="https://arc-en-ciel.com/fr/" />
+<link rel="alternate" hreflang="en" href="https://arc-en-ciel.com/en/" />
+<link rel="alternate" hreflang="x-default" href="https://arc-en-ciel.com/fr/" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "Hotel", "name": "Hôtel Arc en Ciel", "address": {"@type": "PostalAddress", "streetAddress": "123 Rue Fictive, 75000 Paris, France"}, "telephone": "+33 1 23 45 67 89", "email": "contact@arcenciel-hotel.com", "url": "https://arc-en-ciel.com/fr/", "aggregateRating": {"@type": "AggregateRating", "ratingValue": 4.7, "reviewCount": 3}}
+    </script>
+</head>
+<body>
+    <header class="site-header">
+    <div class="container">
+        <div class="logo">
+            <a href="/{{lang}}/">Arc en Ciel</a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="/{{lang}}/">Accueil</a></li>
+                <li><a href="/{{lang}}/chambres/">Chambres</a></li>
+                <li><a href="/{{lang}}/services/">Services</a></li>
+                <li><a href="/{{lang}}/galerie/">Galerie</a></li>
+                <li><a href="/{{lang}}/contact/">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="lang-switcher">
+            <a href="/fr/">FR</a> | <a href="/en/">EN</a>
+        </div>
+    </div>
+</header>
+
+    
+    <main>
+        <section class="section">
+    <div class="container">
+        <h1 class="section-title">Nos Services</h1>
+        
+        <div class="grid-2" style="margin-bottom: var(--space-xl); align-items: center;">
+            <div>
+                <img src="/assets/images/restaurant.webp" alt="Notre Restaurant" style="border-radius: 8px; box-shadow: var(--shadow-md);">
+            </div>
+            <div>
+                <h2 style="color: var(--accent);">Restaurant Gastronomique</h2>
+                <p>Découvrez une cuisine raffinée, préparée avec des produits locaux et de saison. Notre chef vous invite à un voyage culinaire exceptionnel, dans un cadre élégant avec vue panoramique.</p>
+                <ul style="margin-top: var(--space-md);">
+                    <li>✔ Petit-déjeuner buffet de 7h à 10h</li>
+                    <li>✔ Dîner de 19h à 22h</li>
+                    <li>✔ Carte des vins soigneusement sélectionnée</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="grid-2" style="align-items: center;">
+            <div style="order: 2;">
+                <img src="/assets/images/spa.webp" alt="Notre Spa" style="border-radius: 8px; box-shadow: var(--shadow-md);">
+            </div>
+            <div style="order: 1;">
+                <h2 style="color: var(--accent);">Espace Spa & Bien-être</h2>
+                <p>Offrez-vous un moment de pure détente dans notre spa. Profitez de nos installations modernes pour vous ressourcer après une journée de visites ou de travail.</p>
+                <ul style="margin-top: var(--space-md);">
+                    <li>✔ Piscine intérieure chauffée</li>
+                    <li>✔ Sauna et Hammam</li>
+                    <li>✔ Massages sur réservation</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+    
+    <!-- Floating booking widget for mobile -->
+    <div class="floating-booking">
+        <a href="https://booking.com/hotel/arc-en-ciel" class="btn-primary" target="_blank" rel="noopener">Réserver</a>
+    </div>
+
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-content grid-3">
+            <div>
+                <h4>{{global.hotel_name}}</h4>
+                <p>{{global.address}}</p>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p>Tel: {{global.phone}}</p>
+                <p>Email: {{global.email}}</p>
+            </div>
+            <div>
+                <h4>Suivez-nous</h4>
+                <div class="social-links">
+                    <a href="{{global.socials.instagram}}" target="_blank" rel="noopener">Instagram</a>
+                    <a href="{{global.socials.facebook}}" target="_blank" rel="noopener">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 {{global.hotel_name}}. Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
+
+    
+    <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

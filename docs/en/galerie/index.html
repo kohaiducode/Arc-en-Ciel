@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Hotel Arc en Ciel</title>
+    <meta name="description" content="Discover Hotel Arc en Ciel in pictures.">
+    
+    <!-- SEO Hreflang Tags -->
+    <link rel="alternate" hreflang="fr" href="https://arc-en-ciel.com/fr/" />
+<link rel="alternate" hreflang="en" href="https://arc-en-ciel.com/en/" />
+<link rel="alternate" hreflang="x-default" href="https://arc-en-ciel.com/fr/" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "Hotel", "name": "Hotel Arc en Ciel", "address": {"@type": "PostalAddress", "streetAddress": "123 Fictive Street, 75000 Paris, France"}, "telephone": "+33 1 23 45 67 89", "email": "contact@arcenciel-hotel.com", "url": "https://arc-en-ciel.com/en/", "aggregateRating": {"@type": "AggregateRating", "ratingValue": 4.7, "reviewCount": 3}}
+    </script>
+</head>
+<body>
+    <header class="site-header">
+    <div class="container">
+        <div class="logo">
+            <a href="/{{lang}}/">Arc en Ciel</a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="/{{lang}}/">Accueil</a></li>
+                <li><a href="/{{lang}}/chambres/">Chambres</a></li>
+                <li><a href="/{{lang}}/services/">Services</a></li>
+                <li><a href="/{{lang}}/galerie/">Galerie</a></li>
+                <li><a href="/{{lang}}/contact/">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="lang-switcher">
+            <a href="/fr/">FR</a> | <a href="/en/">EN</a>
+        </div>
+    </div>
+</header>
+
+    
+    <main>
+        <section class="section">
+    <div class="container">
+        <h1 class="section-title">Photo Gallery</h1>
+        
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">Tout</button>
+            <button class="filter-btn" data-filter="chambres">Chambres</button>
+            <button class="filter-btn" data-filter="services">Services</button>
+            <button class="filter-btn" data-filter="exterieur">Extérieur</button>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+            <div class="gallery-item" data-category="chambres">
+                <img src="/assets/images/room-standard.webp" alt="Chambre Standard" loading="lazy">
+            </div>
+            <div class="gallery-item" data-category="chambres">
+                <img src="/assets/images/room-superior.webp" alt="Chambre Supérieure" loading="lazy">
+            </div>
+            <div class="gallery-item" data-category="chambres">
+                <img src="/assets/images/suite-family.webp" alt="Suite Familiale" loading="lazy">
+            </div>
+            <div class="gallery-item" data-category="services">
+                <img src="/assets/images/restaurant.webp" alt="Restaurant" loading="lazy">
+            </div>
+            <div class="gallery-item" data-category="services">
+                <img src="/assets/images/spa.webp" alt="Spa" loading="lazy">
+            </div>
+            <!-- Ajouter d'autres images ici -->
+        </div>
+    </div>
+</section>
+
+    </main>
+    
+    <!-- Floating booking widget for mobile -->
+    <div class="floating-booking">
+        <a href="https://booking.com/hotel/arc-en-ciel" class="btn-primary" target="_blank" rel="noopener">Réserver</a>
+    </div>
+
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-content grid-3">
+            <div>
+                <h4>{{global.hotel_name}}</h4>
+                <p>{{global.address}}</p>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p>Tel: {{global.phone}}</p>
+                <p>Email: {{global.email}}</p>
+            </div>
+            <div>
+                <h4>Suivez-nous</h4>
+                <div class="social-links">
+                    <a href="{{global.socials.instagram}}" target="_blank" rel="noopener">Instagram</a>
+                    <a href="{{global.socials.facebook}}" target="_blank" rel="noopener">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 {{global.hotel_name}}. Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
+
+    
+    <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

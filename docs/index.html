@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <script>
+        var lang = navigator.language || navigator.userLanguage;
+        lang = lang.substring(0, 2);
+        var supported = ["fr", "en"];
+        var defaultLang = "fr";
+        var redirectLang = supported.includes(lang) ? lang : defaultLang;
+        window.location.href = "/" + redirectLang + "/";
+    </script>
+</head>
+<body>
+    <a href="/fr/">Continuer vers le site</a>
+</body>
+</html>
