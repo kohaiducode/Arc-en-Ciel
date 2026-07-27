@@ -141,7 +141,7 @@ img {
   height: 70vh;
   min-height: 500px;
   background-color: var(--primary);
-  background-image: url('../images/Vue de dehors plus belle.webp');
+  background-image: url('../images/hero.webp');
   background-size: cover;
   background-position: center;
   position: relative;
