@@ -8,6 +8,7 @@ SRC_DIR = 'src'
 OUT_DIR = 'docs'
 LANGUAGES = ['fr', 'en']
 DEFAULT_LANG = 'fr'
+BASE_PATH = '/Arc-en-Ciel'  # Change to '' if using a custom domain later
 
 def load_json(lang, filename):
     path = os.path.join(SRC_DIR, 'translations', lang, filename)
@@ -111,7 +112,7 @@ def build_site():
                     amenities_html = "".join([f"<li>{a}</li>" for a in r.get('amenities', [])])
                     rooms_html += f"""
                     <div class="room-card">
-                        <img src="/assets/images/{r.get('image', '')}" alt="{r.get('name', '')}" loading="lazy">
+                        <img src="{BASE_PATH}/assets/images/{r.get('image', '')}" alt="{r.get('name', '')}" loading="lazy">
                         <div class="room-card-content">
                             <h3>{r.get('name', '')}</h3>
                             <p class="room-meta"><span>{r.get('area_sqm', '')} m²</span> | <span>{r.get('capacity', '')} personnes</span></p>
@@ -144,7 +145,8 @@ def build_site():
                 "seo_hreflang": hreflang_tags,
                 "seo_json_ld": json_ld,
                 "rooms_html": rooms_html,
-                "reviews_html": reviews_html
+                "reviews_html": reviews_html,
+                "base_path": BASE_PATH
             }
             
             rendered_content = render_template(content_html, context)
@@ -172,11 +174,11 @@ def build_site():
         var supported = {json.dumps(LANGUAGES)};
         var defaultLang = "{DEFAULT_LANG}";
         var redirectLang = supported.includes(lang) ? lang : defaultLang;
-        window.location.href = "/" + redirectLang + "/";
+        window.location.href = "{BASE_PATH}/" + redirectLang + "/";
     </script>
 </head>
 <body>
-    <a href="/{DEFAULT_LANG}/">Continuer vers le site</a>
+    <a href="{BASE_PATH}/{DEFAULT_LANG}/">Continuer vers le site</a>
 </body>
 </html>'''
     with open(os.path.join(OUT_DIR, 'index.html'), 'w', encoding='utf-8') as f:
