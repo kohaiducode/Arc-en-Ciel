@@ -1,29 +1,29 @@
 [
   {
-    "id": "chambre-standard",
-    "name": "Chambre Standard",
-    "area_sqm": 20,
+    "id": "chambre-basse-saison",
+    "name": "Chambre Double (Basse Saison)",
+    "area_sqm": 15,
     "capacity": 2,
-    "amenities": ["Wi-Fi Rapide", "TV Écran Plat", "Climatisation", "Coffre-fort"],
-    "image": "room-standard.webp",
-    "cta_text": "Réserver"
+    "amenities": ["Climatisation", "Télévision TNT", "Wifi Gratuit", "Douche & Toilettes"],
+    "image": "chambre lit.webp",
+    "cta_text": "À partir de 115€"
   },
   {
-    "id": "chambre-superieure",
-    "name": "Chambre Supérieure",
-    "area_sqm": 28,
+    "id": "chambre-moyenne-saison",
+    "name": "Chambre Double (Moyenne Saison)",
+    "area_sqm": 15,
     "capacity": 2,
-    "amenities": ["Wi-Fi Rapide", "TV Écran Plat 4K", "Climatisation", "Mini-bar", "Vue sur Jardin"],
-    "image": "room-superior.webp",
-    "cta_text": "Réserver"
+    "amenities": ["Climatisation", "Télévision TNT", "Wifi Gratuit", "Douche & Toilettes"],
+    "image": "Chambre lit (2).webp",
+    "cta_text": "À partir de 130€"
   },
   {
-    "id": "suite-familiale",
-    "name": "Suite Familiale",
-    "area_sqm": 45,
-    "capacity": 4,
-    "amenities": ["Wi-Fi Rapide", "2 TV Écran Plat", "Climatisation", "Coin Salon", "Baignoire"],
-    "image": "suite-family.webp",
-    "cta_text": "Réserver"
+    "id": "chambre-haute-saison",
+    "name": "Chambre Double (Haute Saison)",
+    "area_sqm": 15,
+    "capacity": 2,
+    "amenities": ["Climatisation", "Télévision TNT", "Wifi Gratuit", "Douche & Toilettes"],
+    "image": "Chambre lit (3).webp",
+    "cta_text": "À partir de 150€"
   }
 ]

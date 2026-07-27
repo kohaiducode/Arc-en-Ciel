@@ -40,9 +40,9 @@ def optimize_images():
                             
                         # Save as WebP
                         img.save(dest_path, "WEBP", quality=80)
-                        print(f"✅ Optimisé : {file} -> {base_name}.webp")
+                        print(f"-> Optimisé : {file} -> {base_name}.webp")
                 except Exception as e:
-                    print(f"❌ Erreur avec {file}: {e}")
+                    print(f"X Erreur avec {file}: {e}")
 
 if __name__ == "__main__":
     optimize_images()

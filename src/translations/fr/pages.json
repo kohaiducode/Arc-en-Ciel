@@ -1,33 +1,33 @@
 {
   "index": {
     "title": "Accueil",
-    "seo_title": "Hôtel Arc en Ciel | Votre séjour inoubliable",
-    "seo_description": "Découvrez l'hôtel Arc en Ciel, un établissement de charme pour un séjour inoubliable.",
-    "hero_title": "Bienvenue à l'Arc en Ciel",
-    "hero_subtitle": "L'élégance et le confort à votre portée"
+    "seo_title": "Hôtel Arc en Ciel | Eze Village, Côte d'Azur",
+    "seo_description": "L'Hôtel Arc en ciel est situé au pied d'Eze, l'un des plus beaux villages de France. Village médieval enchanteur entre Nice et Monaco.",
+    "hero_title": "Bienvenue à l'Hôtel Arc en Ciel",
+    "hero_subtitle": "Une halte reposante au pied du village d'Eze, entre Nice et Monaco"
   },
   "chambres": {
     "title": "Nos Chambres",
-    "seo_title": "Chambres - Hôtel Arc en Ciel",
-    "seo_description": "Découvrez nos chambres confortables et équipées."
+    "seo_title": "Chambres - Hôtel Arc en Ciel Eze",
+    "seo_description": "Des chambres climatisées, lumineuses, avec tout le confort à Eze Village."
   },
   "services": {
     "title": "Nos Services",
-    "seo_title": "Services - Hôtel Arc en Ciel",
-    "seo_description": "Profitez de notre restaurant, spa et autres activités."
+    "seo_title": "Services - Hôtel Arc en Ciel Eze",
+    "seo_description": "Profitez de notre bar, de la petite restauration et de notre boutique de souvenirs."
   },
   "galerie": {
     "title": "Galerie Photo",
-    "seo_title": "Galerie - Hôtel Arc en Ciel",
-    "seo_description": "Découvrez l'hôtel Arc en Ciel en images."
+    "seo_title": "Galerie - Hôtel Arc en Ciel Eze",
+    "seo_description": "Découvrez l'hôtel Arc en Ciel et les paysages d'Eze en images."
   },
   "contact": {
-    "title": "Contactez-nous",
-    "seo_title": "Contact - Hôtel Arc en Ciel",
-    "seo_description": "Contactez l'hôtel Arc en Ciel pour toute réservation ou question.",
-    "form_name": "Votre Nom",
-    "form_email": "Votre Email",
-    "form_message": "Votre Message",
-    "form_submit": "Envoyer"
+    "title": "Contact & Accès",
+    "seo_title": "Contact - Hôtel Arc en Ciel Eze",
+    "seo_description": "Contactez l'hôtel Arc en Ciel à Eze Village. Demande de pré-réservation.",
+    "form_name": "Nom & Prénom",
+    "form_email": "Votre E-mail",
+    "form_message": "Vos remarques / Dates souhaitées",
+    "form_submit": "Envoyer la demande"
   }
 }

@@ -1,12 +1,12 @@
 {
   "hotel_name": "Hôtel Arc en Ciel",
-  "address": "123 Rue Fictive, 75000 Paris, France",
-  "gps": {"lat": 48.8566, "lng": 2.3522},
-  "phone": "+33 1 23 45 67 89",
-  "email": "contact@arcenciel-hotel.com",
-  "booking_url": "https://booking.com/hotel/arc-en-ciel",
+  "address": "Avenue du Jardin Exotique, 06360 EZE VILLAGE, France",
+  "gps": {"lat": 43.7294334, "lng": 7.3615388},
+  "phone": "+33 6 87 20 37 20",
+  "email": "reservation@arcencieleze.fr",
+  "booking_url": "https://www.booking.com/hotel/fr/arc-en-ciel-eze.fr.html",
   "socials": {
-    "instagram": "https://instagram.com/...",
-    "facebook": "https://facebook.com/..."
+    "instagram": "",
+    "facebook": ""
   }
 }

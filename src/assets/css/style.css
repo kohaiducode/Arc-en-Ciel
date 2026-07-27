@@ -392,6 +392,20 @@ textarea.form-control {
   resize: vertical;
 }
 
+/* --- Images & Gallery --- */
+.low-res-img {
+    object-fit: cover;
+    object-position: center;
+    border: 4px solid var(--white);
+    border-radius: 4px;
+    box-shadow: var(--shadow-md);
+    background-color: var(--light-gray);
+    transition: transform 0.3s ease;
+}
+.low-res-img:hover {
+    transform: scale(1.02);
+}
+
 /* Gallery Filter */
 .gallery-filters {
   display: flex;

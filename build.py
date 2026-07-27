@@ -193,6 +193,10 @@ def build_site():
     with open(os.path.join(OUT_DIR, 'robots.txt'), 'w', encoding='utf-8') as f:
         f.write(f"User-agent: *\\nAllow: /\\nSitemap: {base_url}/sitemap.xml\\n")
 
+    # Add .nojekyll for GitHub Pages
+    with open(os.path.join(OUT_DIR, '.nojekyll'), 'w') as f:
+        pass
+    
     print("OK: Site généré avec succès !")
 
 if __name__ == "__main__":
