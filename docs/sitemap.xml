@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://votresite.github.io/arc-en-ciel/en/index.html</loc>
+    
+    <xhtml:link rel="alternate" hreflang="en" href="https://votresite.github.io/arc-en-ciel/en/index.html" />
+    
+    <xhtml:link rel="alternate" hreflang="fr" href="https://votresite.github.io/arc-en-ciel/fr/index.html" />
+    
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://votresite.github.io/arc-en-ciel/fr/index.html" />
+  </url>
+
+  <url>
+    <loc>https://votresite.github.io/arc-en-ciel/en/rooms.html</loc>
+    
+    <xhtml:link rel="alternate" hreflang="en" href="https://votresite.github.io/arc-en-ciel/en/rooms.html" />
+    
+    <xhtml:link rel="alternate" hreflang="fr" href="https://votresite.github.io/arc-en-ciel/fr/rooms.html" />
+    
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://votresite.github.io/arc-en-ciel/fr/rooms.html" />
+  </url>
+
+  <url>
+    <loc>https://votresite.github.io/arc-en-ciel/en/location.html</loc>
+    
+    <xhtml:link rel="alternate" hreflang="en" href="https://votresite.github.io/arc-en-ciel/en/location.html" />
+    
+    <xhtml:link rel="alternate" hreflang="fr" href="https://votresite.github.io/arc-en-ciel/fr/location.html" />
+    
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://votresite.github.io/arc-en-ciel/fr/location.html" />
+  </url>
+
+  <url>
+    <loc>https://votresite.github.io/arc-en-ciel/en/contact.html</loc>
+    
+    <xhtml:link rel="alternate" hreflang="en" href="https://votresite.github.io/arc-en-ciel/en/contact.html" />
+    
+    <xhtml:link rel="alternate" hreflang="fr" href="https://votresite.github.io/arc-en-ciel/fr/contact.html" />
+    
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://votresite.github.io/arc-en-ciel/fr/contact.html" />
+  </url>
+
+  <url>
+    <loc>https://votresite.github.io/arc-en-ciel/fr/index.html</loc>
+    
+    <xhtml:link rel="alternate" hreflang="en" href="https://votresite.github.io/arc-en-ciel/en/index.html" />
+    
+    <xhtml:link rel="alternate" hreflang="fr" href="https://votresite.github.io/arc-en-ciel/fr/index.html" />
+    
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://votresite.github.io/arc-en-ciel/fr/index.html" />
+  </url>
+
+  <url>
+    <loc>https://votresite.github.io/arc-en-ciel/fr/rooms.html</loc>
+    
+    <xhtml:link rel="alternate" hreflang="en" href="https://votresite.github.io/arc-en-ciel/en/rooms.html" />
+    
+    <xhtml:link rel="alternate" hreflang="fr" href="https://votresite.github.io/arc-en-ciel/fr/rooms.html" />
+    
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://votresite.github.io/arc-en-ciel/fr/rooms.html" />
+  </url>
+
+  <url>
+    <loc>https://votresite.github.io/arc-en-ciel/fr/location.html</loc>
+    
+    <xhtml:link rel="alternate" hreflang="en" href="https://votresite.github.io/arc-en-ciel/en/location.html" />
+    
+    <xhtml:link rel="alternate" hreflang="fr" href="https://votresite.github.io/arc-en-ciel/fr/location.html" />
+    
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://votresite.github.io/arc-en-ciel/fr/location.html" />
+  </url>
+
+  <url>
+    <loc>https://votresite.github.io/arc-en-ciel/fr/contact.html</loc>
+    
+    <xhtml:link rel="alternate" hreflang="en" href="https://votresite.github.io/arc-en-ciel/en/contact.html" />
+    
+    <xhtml:link rel="alternate" hreflang="fr" href="https://votresite.github.io/arc-en-ciel/fr/contact.html" />
+    
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://votresite.github.io/arc-en-ciel/fr/contact.html" />
+  </url>
+
+</urlset>

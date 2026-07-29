@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}{{ data.location.title }} - {{ data.hotel.name }}{% endblock %}
+
+{% block content %}
+<section class="page-header section" style="background-image: url('../assets/img/Hotel-outside/Vue%20de%20dehors.webp');">
+    <div class="container text-center">
+        <h1>{{ data.location.title }}</h1>
+        <p class="subtitle">{{ data.location.description }}</p>
+    </div>
+</section>
+
+<section class="location section reveal">
+    <div class="container">
+        <div class="location-grid">
+            <div class="location-details contact-info-card">
+                <h3 class="mb-1">{{ data.hotel.name }}</h3>
+                <div class="info-block">
+                    <strong>Adresse</strong>
+                    <p>{{ data.hotel.address.streetAddress }}<br>{{ data.hotel.address.postalCode }} {{ data.hotel.address.addressLocality }}</p>
+                </div>
+                <div class="info-block mt-3">
+                    <a href="tel:{{ data.hotel.contact.telephone.replace(' ', '') }}" class="btn btn-primary">Appeler</a>
+                </div>
+            </div>
+            
+            <div class="map-container">
+                <!-- Embebbed Google Maps -->
+                <iframe 
+                    src="https://maps.google.com/maps?q=Arc+En+Ciel+(H%C3%B4tel+et+Cartes+Postales),+Eze&hl={{ locale }}&z=15&amp;output=embed" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

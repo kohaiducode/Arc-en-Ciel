@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block title %}{{ data.contact.title }} - {{ data.hotel.name }}{% endblock %}
+
+{% block content %}
+<section class="page-header section" style="background-image: url('../assets/img/Hotel-outside/paysage%20environnant%20(2).webp');">
+    <div class="container text-center">
+        <h1>{{ data.contact.title }}</h1>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info reveal">
+                <div class="contact-info-card glass" style="margin-bottom: 2rem;">
+                    <h3>{{ data.contact.practical_info_title }}</h3>
+                    <ul class="practical-list" style="list-style: none; padding: 0; margin-top: 1.5rem;">
+                        {% for info in data.contact.practical_info %}
+                        <li style="display: flex; align-items: center; gap: 15px; margin-bottom: 1rem; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 0.5rem;">
+                            <div style="background: var(--color-primary-light); color: var(--color-primary-dark); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                <i data-lucide="{{ info.icon }}"></i>
+                            </div>
+                            <div>
+                                <strong style="display: block; font-size: 0.9em; color: var(--color-primary-dark);">{{ info.label }}</strong>
+                                <span style="color: #555;">{{ info.value }}</span>
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                
+                <div class="contact-info-card glass">
+                    <h3>{{ data.hotel.name }}</h3>
+                <div class="info-block">
+                    <strong>Adresse</strong>
+                    <p>{{ data.hotel.address.streetAddress }}<br>{{ data.hotel.address.postalCode }} {{ data.hotel.address.addressLocality }}</p>
+                </div>
+                <div class="info-block">
+                    <strong>Téléphone</strong>
+                    <p><a href="tel:{{ data.hotel.contact.telephone.replace(' ', '') }}">{{ data.hotel.contact.telephone }}</a></p>
+                </div>
+                <div class="info-block">
+                    <strong>Email</strong>
+                    <p><a href="mailto:{{ data.hotel.contact.email }}">{{ data.hotel.contact.email }}</a></p>
+                </div>
+            </div>
+            </div>
+            
+            <div class="contact-form-container">
+                <form action="mailto:{{ data.hotel.contact.email }}" method="POST" enctype="text/plain" class="booking-form">
+                    <div class="form-group">
+                        <label for="contact-name" class="form-label">{{ data.contact.form_name }}</label>
+                        <input type="text" id="contact-name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email" class="form-label">{{ data.contact.form_email }}</label>
+                        <input type="email" id="contact-email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-dates" class="form-label">{{ data.contact.form_dates }}</label>
+                        <input type="text" id="contact-dates" name="dates" class="form-control" placeholder="ex: 12/08 - 15/08" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message" class="form-label">{{ data.contact.form_message }}</label>
+                        <textarea id="contact-message" name="message" class="form-control" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">{{ data.contact.submit }}</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,116 @@
+{
+  "site_url": "https://votresite.github.io/arc-en-ciel",
+  "meta": {
+    "title": "Hôtel Arc en Ciel | Eze Village, Côte d'Azur",
+    "description": "Bienvenue à l'Hôtel Arc en Ciel, situé au pied du village médiéval enchanteur d'Eze, entre Nice et Monaco. Chambres climatisées, vue mer et montagne.",
+    "og_image": "assets/img/hero/default-hero.webp"
+  },
+  "hotel": {
+    "name": "Hôtel Arc en Ciel",
+    "address": {
+      "streetAddress": "Avenue du Jardin Exotique",
+      "addressLocality": "Èze",
+      "postalCode": "06360",
+      "addressCountry": "FR"
+    },
+    "geo": {
+      "latitude": 43.7294334,
+      "longitude": 7.3615388
+    },
+    "contact": {
+      "telephone": "+33 6 87 20 37 20",
+      "email": "reservation@arcencieleze.fr"
+    },
+    "rating": {
+      "value": "9.2",
+      "count": "150"
+    }
+  },
+  "nav": {
+    "home": "Accueil",
+    "presentation": "L'hôtel",
+    "location": "Accès",
+    "rooms": "Les chambres",
+    "rates": "Tarifs & réservations"
+  },
+  "home": {
+    "hero_title": "Votre parenthèse enchantée à Èze",
+    "hero_subtitle": "Entre terre et mer, un havre de paix au pied d'un des plus beaux villages de France.",
+    "book_cta": "Réserver en direct",
+    "intro_title": "Bienvenue à l'Arc en Ciel",
+    "intro_text": "Idéalement placé sur la moyenne corniche entre Nice (8 Kms) et Monaco (6 Kms), Eze Village, lieu magique planté dans l'azur, a su préserver une atmosphère particulière d'authenticité et de traditions. L'Hôtel Arc en ciel est situé au pied de ce village, l'un des plus beaux de France. Cet établissement dispose également d'un bar (petite restauration rapide) et d'une boutique de cadeaux souvenirs.",
+    "eze_section": {
+      "title": "Découvrez Eze Village",
+      "text": "Village médiéval enchanteur, Eze est un lieu de villégiature idéal entre Nice et Monaco. Perché à 429 mètres d'altitude, il offre une vue exceptionnelle sur la mer. Une halte qui vous permettra de partir à pied à la découverte de cette cité ensoleillée et pittoresque."
+    },
+    "reviews_section": {
+      "title": "Avis de nos clients",
+      "subtitle": "Note de 9,2 par les couples pour un séjour à deux",
+      "reviews": [
+        {
+          "name": "Natalie",
+          "text": "« Cecilia est full accueillante et tellement avenante. Elle fait tout pour que nous soyons bien heureux et satisfait de notre séjour ! Merci pour tes précieux conseils et peut-être à bientôt! ;-) »"
+        },
+        {
+          "name": "Jeremie",
+          "text": "« Personnel très sympathique. Emplacement idéal au pied du village. »"
+        },
+        {
+          "name": "Coralie",
+          "text": "« Accueil chaleureux et souriant, chambre propre, rien à dire. Merci !😊 Je recommande. »"
+        }
+      ]
+    },
+    "nearby_section": {
+      "title": "Activités et Plages à proximité",
+      "items": [
+        { "name": "Plage d'Èze", "dist": "2,1 km" },
+        { "name": "Monaco", "dist": "6 km" },
+        { "name": "Nice (Place Garibaldi)", "dist": "9 km" },
+        { "name": "MAMAC (Musée d'art moderne)", "dist": "9 km" }
+      ]
+    }
+  },
+  "rooms": {
+    "title": "Nos Chambres",
+    "description": "La simplicité de ce petit hôtel, situé à l'entrée du village, vous comblera et vous reposera, loin du tumulte de la Riviera. Des chambres climatisées, lumineuses, avec tout le confort (télévision, TNT, Wifi gratuit, douche, toilettes).",
+    "items": [
+      {
+        "name": "Chambre Double Standard",
+        "description": "Chambre lumineuse idéale pour un séjour en couple, équipée d'un grand lit, climatisation, et Wi-Fi gratuit.",
+        "image": "chambre lit.webp",
+        "price": "À partir de 115€"
+      },
+      {
+        "name": "Chambre Supérieure",
+        "description": "Chambre spacieuse avec vue dégagée, offrant un confort optimal pour votre séjour sur la Côte d'Azur.",
+        "image": "Chambre lit (2).webp",
+        "price": "À partir de 130€"
+      }
+    ]
+  },
+  "location": {
+    "title": "Accès",
+    "description": "Entre terre et mer, à l'accès facile : Autoroute A8 sortie 57, la Turbie, prendre en direction de Eze village. L'hôtel est proche de l'office de tourisme."
+  },
+  "contact": {
+    "title": "Contact & Réservation",
+    "form_name": "Nom",
+    "form_email": "Email",
+    "form_dates": "Dates de séjour",
+    "form_message": "Message",
+    "submit": "Envoyer la demande",
+    "practical_info_title": "Informations Pratiques",
+    "practical_info": [
+      { "icon": "clock", "label": "Réception", "value": "8h30 - 18h30" },
+      { "icon": "log-in", "label": "Arrivée", "value": "à partir de 14h" },
+      { "icon": "log-out", "label": "Départ", "value": "au plus tard 11h" },
+      { "icon": "credit-card", "label": "Paiement", "value": "Amex, Visa, Eurocard, Mastercard" },
+      { "icon": "file-text", "label": "Taxe de séjour", "value": "2,30 € / nuit / personne" },
+      { "icon": "info", "label": "Annulation", "value": "Gratuite jusqu'à 7 jours avant l'arrivée" }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2026 - Hôtel Arc en Ciel Eze. Tous droits réservés."
+  }
+}

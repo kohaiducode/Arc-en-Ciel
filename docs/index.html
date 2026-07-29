@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Hôtel Arc en Ciel</title>
+    <script>
+        var lang = navigator.language || navigator.userLanguage;
+        if (lang.startsWith('fr')) {
+            window.location.href = './fr/index.html';
+        } else {
+            window.location.href = './en/index.html';
+        }
+    </script>
+</head>
+<body>
+    <p>Redirection en cours... <a href="./fr/index.html">Français</a> | <a href="./en/index.html">English</a></p>
+</body>
+</html>

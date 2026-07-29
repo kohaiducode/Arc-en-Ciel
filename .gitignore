@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+all_data.txt
+eze.txt
+keys.txt
+texts.txt
+.DS_Store

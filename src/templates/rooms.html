@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}{{ data.rooms.title }} - {{ data.hotel.name }}{% endblock %}
+
+{% block content %}
+<section class="page-header section" style="background-image: url('../assets/img/Chambres/Vue%20de%20chambre.webp');">
+    <div class="container text-center">
+        <h1>{{ data.rooms.title }}</h1>
+        <p class="subtitle">{{ data.rooms.description }}</p>
+    </div>
+</section>
+
+<section class="rooms section">
+    <div class="container">
+        <div class="rooms-grid">
+            {% for room in data.rooms['items'] %}
+            <article class="room-card reveal">
+                <div class="room-image">
+                    <img src="../assets/img/Chambres/{{ room.image }}" alt="{{ room.name }}" loading="lazy">
+                    <span class="room-price">{{ room.price }}</span>
+                </div>
+                <div class="room-content">
+                    <h3>{{ room.name }}</h3>
+                    <p>{{ room.description }}</p>
+                    <a href="contact.html" class="btn btn-outline">{{ data.home.book_cta }}</a>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

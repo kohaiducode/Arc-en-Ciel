@@ -1,0 +1,116 @@
+{
+  "site_url": "https://votresite.github.io/arc-en-ciel",
+  "meta": {
+    "title": "Hotel Arc en Ciel | Eze Village, French Riviera",
+    "description": "Welcome to Hotel Arc en Ciel, located at the foot of the enchanting medieval village of Eze, between Nice and Monaco. Air-conditioned rooms with sea and mountain views.",
+    "og_image": "assets/img/hero/default-hero.webp"
+  },
+  "hotel": {
+    "name": "Hotel Arc en Ciel",
+    "address": {
+      "streetAddress": "Avenue du Jardin Exotique",
+      "addressLocality": "Èze",
+      "postalCode": "06360",
+      "addressCountry": "FR"
+    },
+    "geo": {
+      "latitude": 43.7294334,
+      "longitude": 7.3615388
+    },
+    "contact": {
+      "telephone": "+33 6 87 20 37 20",
+      "email": "reservation@arcencieleze.fr"
+    },
+    "rating": {
+      "value": "9.2",
+      "count": "150"
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "presentation": "The Hotel",
+    "location": "Access",
+    "rooms": "Rooms",
+    "rates": "Rates & Booking"
+  },
+  "home": {
+    "hero_title": "Your enchanted getaway in Èze",
+    "hero_subtitle": "Between land and sea, a haven of peace at the foot of one of the most beautiful villages in France.",
+    "book_cta": "Book Direct",
+    "intro_title": "Welcome to Arc en Ciel",
+    "intro_text": "Ideally situated on the middle corniche between Nice (8 Kms) and Monaco (6 Kms), Eze Village, a magical place planted in the azure, has preserved a special atmosphere of authenticity and tradition. The Hotel Arc en ciel is located at the foot of this village, one of the most beautiful in France. This establishment also features a bar (snack food) and a souvenir gift shop.",
+    "eze_section": {
+      "title": "Discover Eze Village",
+      "text": "An enchanting medieval village, Eze is an ideal holiday destination between Nice and Monaco. Perched at an altitude of 429 meters, it offers exceptional sea views. A perfect stopover that allows you to discover this sunny and picturesque town on foot."
+    },
+    "reviews_section": {
+      "title": "Guest Reviews",
+      "subtitle": "Rated 9.2 by couples for a romantic stay",
+      "reviews": [
+        {
+          "name": "Natalie",
+          "text": "« Cecilia is incredibly welcoming and so friendly. She does everything to ensure we are happy and satisfied with our stay! Thank you for your valuable advice and see you soon! ;-) »"
+        },
+        {
+          "name": "Jeremie",
+          "text": "« Very friendly staff. Ideal location at the foot of the village. »"
+        },
+        {
+          "name": "Coralie",
+          "text": "« Warm and smiling welcome, clean room, nothing to say. Thank you! 😊 I recommend it. »"
+        }
+      ]
+    },
+    "nearby_section": {
+      "title": "Nearby Activities & Beaches",
+      "items": [
+        { "name": "Eze Beach", "dist": "2.1 km" },
+        { "name": "Monaco", "dist": "6 km" },
+        { "name": "Nice (Place Garibaldi)", "dist": "9 km" },
+        { "name": "MAMAC (Museum of Modern Art)", "dist": "9 km" }
+      ]
+    }
+  },
+  "rooms": {
+    "title": "Our Rooms",
+    "description": "The simplicity of this small hotel, located at the entrance of the village, will delight you and offer a restful break, far from the tumult of the Riviera. Air-conditioned, bright rooms with all comforts (TV, free WiFi, shower, toilet).",
+    "items": [
+      {
+        "name": "Standard Double Room",
+        "description": "Bright room ideal for a couple's stay, equipped with a large bed, air conditioning, and free Wi-Fi.",
+        "image": "chambre lit.webp",
+        "price": "From 115€"
+      },
+      {
+        "name": "Superior Room",
+        "description": "Spacious room with an unobstructed view, offering optimal comfort for your stay on the French Riviera.",
+        "image": "Chambre lit (2).webp",
+        "price": "From 130€"
+      }
+    ]
+  },
+  "location": {
+    "title": "Access",
+    "description": "Between land and sea, with easy access: A8 motorway exit 57, La Turbie, head towards Eze village. The hotel is close to the tourist office."
+  },
+  "contact": {
+    "title": "Contact & Booking",
+    "form_name": "Name",
+    "form_email": "Email",
+    "form_dates": "Stay Dates",
+    "form_message": "Message",
+    "submit": "Send Request",
+    "practical_info_title": "Practical Information",
+    "practical_info": [
+      { "icon": "clock", "label": "Reception", "value": "8:30 AM - 6:30 PM" },
+      { "icon": "log-in", "label": "Check-in", "value": "from 2:00 PM" },
+      { "icon": "log-out", "label": "Check-out", "value": "by 11:00 AM" },
+      { "icon": "credit-card", "label": "Payment", "value": "Amex, Visa, Eurocard, Mastercard" },
+      { "icon": "file-text", "label": "City Tax", "value": "2.30 € / night / person" },
+      { "icon": "info", "label": "Cancellation", "value": "Free up to 7 days before arrival" }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2026 - Hotel Arc en Ciel Eze. All rights reserved."
+  }
+}

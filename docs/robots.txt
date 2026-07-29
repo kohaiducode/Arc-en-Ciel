@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://votresite.github.io/arc-en-ciel/sitemap.xml

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="{{ locale }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{{ data.meta.title }}{% endblock %}</title>
+    <meta name="description" content="{% block description %}{{ data.meta.description }}{% endblock %}">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{ data.meta.title }}">
+    <meta property="og:description" content="{{ data.meta.description }}">
+    <meta property="og:image" content="{{ data.site_url }}/{{ data.meta.og_image }}">
+    <meta property="og:url" content="{{ data.site_url }}/{{ locale }}/{{ page_name }}.html">
+    <meta property="og:type" content="website">
+
+    <!-- Hreflang for i18n -->
+    {% for l in locales %}
+    <link rel="alternate" hreflang="{{ l }}" href="{{ data.site_url }}/{{ l }}/{{ page_name }}.html">
+    {% endfor %}
+    <link rel="alternate" hreflang="x-default" href="{{ data.site_url }}/fr/{{ page_name }}.html">
+    <link rel="canonical" href="{{ data.site_url }}/{{ locale }}/{{ page_name }}.html">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Hotel",
+      "name": "{{ data.hotel.name }}",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "{{ data.hotel.address.streetAddress }}",
+        "addressLocality": "{{ data.hotel.address.addressLocality }}",
+        "postalCode": "{{ data.hotel.address.postalCode }}",
+        "addressCountry": "{{ data.hotel.address.addressCountry }}"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": {{ data.hotel.geo.latitude }},
+        "longitude": {{ data.hotel.geo.longitude }}
+      },
+      "telephone": "{{ data.hotel.contact.telephone }}",
+      "email": "{{ data.hotel.contact.email }}",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "{{ data.hotel.rating.value }}",
+        "reviewCount": "{{ data.hotel.rating.count }}"
+      }
+    }
+    </script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../assets/img/Logo/logo.png" alt="{{ data.hotel.name }}" class="logo-img">
+                </a>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html" {% if page_name == 'index' %}class="active"{% endif %}>{{ data.nav.home }}</a>
+                <a href="rooms.html" {% if page_name == 'rooms' %}class="active"{% endif %}>{{ data.nav.rooms }}</a>
+                <a href="location.html" {% if page_name == 'location' %}class="active"{% endif %}>{{ data.nav.location }}</a>
+                <a href="contact.html" {% if page_name == 'contact' %}class="active"{% endif %}>{{ data.nav.rates }}</a>
+                
+                <div class="mobile-contact-info">
+                    <p><strong>{{ data.hotel.name }}</strong></p>
+                    <p>{{ data.hotel.address.streetAddress }}<br>{{ data.hotel.address.postalCode }} {{ data.hotel.address.addressLocality }}</p>
+                    <p><a href="tel:{{ data.hotel.contact.telephone.replace(' ', '') }}">{{ data.hotel.contact.telephone }}</a></p>
+                    <p><a href="mailto:{{ data.hotel.contact.email }}">{{ data.hotel.contact.email }}</a></p>
+                </div>
+            </nav>
+            <div class="lang-switcher">
+                {% for l in locales %}
+                <a href="../{{ l }}/{{ page_name }}.html" class="{% if l == locale %}active{% endif %}">{{ l | upper }}</a>
+                {% endfor %}
+            </div>
+            <div class="burger-menu" id="burgerMenu" aria-label="Toggle Navigation" aria-expanded="false" role="button" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo mb-1">
+                        <img src="../assets/img/Logo/logo.png" alt="{{ data.hotel.name }}" style="height: 60px;">
+                    </div>
+                    <p>{{ data.hotel.address.streetAddress }}<br>{{ data.hotel.address.postalCode }} {{ data.hotel.address.addressLocality }}</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <p class="contact-link-wrapper">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="footer-icon"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <a href="tel:{{ data.hotel.contact.telephone.replace(' ', '') }}">{{ data.hotel.contact.telephone }}</a>
+                    </p>
+                    <p class="contact-link-wrapper">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="footer-icon"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <a href="mailto:{{ data.hotel.contact.email }}">{{ data.hotel.contact.email }}</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>{{ data.footer.copyright }}</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Mobile CTA -->
+    <a href="contact.html" class="sticky-cta">{{ data.home.book_cta }}</a>
+
+    <script>
+        // Mobile Menu Toggle
+        const burger = document.getElementById('burgerMenu');
+        const nav = document.querySelector('.nav-links');
+        if(burger) {
+            burger.addEventListener('click', () => {
+                nav.classList.toggle('active');
+                burger.classList.toggle('active');
+                const isExpanded = burger.getAttribute('aria-expanded') === 'true';
+                burger.setAttribute('aria-expanded', !isExpanded);
+            });
+            // Keyboard accessibility
+            burger.addEventListener('keydown', (e) => {
+                if(e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    burger.click();
+                }
+            });
+        }
+
+        // Scroll Navbar Effect
+        const navbar = document.querySelector('.navbar');
+        if(navbar) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+        }
+
+        // Intersection Observer for scroll reveals
+        const revealElements = document.querySelectorAll('.reveal');
+        if(revealElements.length > 0) {
+            const revealOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+            const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, revealOptions);
+
+            revealElements.forEach(el => {
+                revealOnScroll.observe(el);
+            });
+        }
+    </script>
+</body>
+</html>

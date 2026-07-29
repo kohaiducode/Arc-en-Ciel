@@ -1,0 +1,73 @@
+backend:
+  name: github
+  repo: your-username/arc-en-ciel-website # TO DO: remplacer par le vrai repo
+  branch: main
+  site_domain: votresite.github.io
+
+media_folder: "docs/assets/img"
+public_folder: "../assets/img"
+
+collections:
+  - name: "site_data"
+    label: "Données du Site (i18n)"
+    folder: "data"
+    create: false
+    extension: "json"
+    format: "json"
+    fields:
+      - {label: "URL du Site", name: "site_url", widget: "string"}
+      - label: "SEO / Meta"
+        name: "meta"
+        widget: "object"
+        fields:
+          - {label: "Titre", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - {label: "Image OpenGraph", name: "og_image", widget: "image"}
+      - label: "Infos Hôtel"
+        name: "hotel"
+        widget: "object"
+        fields:
+          - {label: "Nom", name: "name", widget: "string"}
+          - label: "Adresse"
+            name: "address"
+            widget: "object"
+            fields:
+              - {label: "Rue", name: "streetAddress", widget: "string"}
+              - {label: "Ville", name: "addressLocality", widget: "string"}
+              - {label: "Code Postal", name: "postalCode", widget: "string"}
+              - {label: "Pays", name: "addressCountry", widget: "string"}
+          - label: "GPS"
+            name: "geo"
+            widget: "object"
+            fields:
+              - {label: "Latitude", name: "latitude", widget: "number", value_type: "float"}
+              - {label: "Longitude", name: "longitude", widget: "number", value_type: "float"}
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - {label: "Téléphone", name: "telephone", widget: "string"}
+              - {label: "Email", name: "email", widget: "string"}
+      - label: "Page d'Accueil"
+        name: "home"
+        widget: "object"
+        fields:
+          - {label: "Titre Hero", name: "hero_title", widget: "string"}
+          - {label: "Sous-titre Hero", name: "hero_subtitle", widget: "string"}
+          - {label: "Bouton Action", name: "book_cta", widget: "string"}
+          - {label: "Titre Intro", name: "intro_title", widget: "string"}
+          - {label: "Texte Intro", name: "intro_text", widget: "text"}
+      - label: "Chambres"
+        name: "rooms"
+        widget: "object"
+        fields:
+          - {label: "Titre Section", name: "title", widget: "string"}
+          - {label: "Description Section", name: "description", widget: "text"}
+          - label: "Liste des chambres"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Nom", name: "name", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Prix", name: "price", widget: "string"}
+              - {label: "Image", name: "image", widget: "image"}

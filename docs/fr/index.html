@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hôtel Arc en Ciel | Eze Village, Côte d'Azur</title>
+    <meta name="description" content="Bienvenue à l'Hôtel Arc en Ciel, situé au pied du village médiéval enchanteur d'Eze, entre Nice et Monaco. Chambres climatisées, vue mer et montagne.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Hôtel Arc en Ciel | Eze Village, Côte d'Azur">
+    <meta property="og:description" content="Bienvenue à l'Hôtel Arc en Ciel, situé au pied du village médiéval enchanteur d'Eze, entre Nice et Monaco. Chambres climatisées, vue mer et montagne.">
+    <meta property="og:image" content="https://votresite.github.io/arc-en-ciel/assets/img/hero/default-hero.webp">
+    <meta property="og:url" content="https://votresite.github.io/arc-en-ciel/fr/index.html">
+    <meta property="og:type" content="website">
+
+    <!-- Hreflang for i18n -->
+    
+    <link rel="alternate" hreflang="en" href="https://votresite.github.io/arc-en-ciel/en/index.html">
+    
+    <link rel="alternate" hreflang="fr" href="https://votresite.github.io/arc-en-ciel/fr/index.html">
+    
+    <link rel="alternate" hreflang="x-default" href="https://votresite.github.io/arc-en-ciel/fr/index.html">
+    <link rel="canonical" href="https://votresite.github.io/arc-en-ciel/fr/index.html">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Hotel",
+      "name": "Hôtel Arc en Ciel",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Avenue du Jardin Exotique",
+        "addressLocality": "Èze",
+        "postalCode": "06360",
+        "addressCountry": "FR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 43.7294334,
+        "longitude": 7.3615388
+      },
+      "telephone": "+33 6 87 20 37 20",
+      "email": "reservation@arcencieleze.fr",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "9.2",
+        "reviewCount": "150"
+      }
+    }
+    </script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../assets/img/Logo/logo.png" alt="Hôtel Arc en Ciel" class="logo-img">
+                </a>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html" class="active">Accueil</a>
+                <a href="rooms.html" >Les chambres</a>
+                <a href="location.html" >Accès</a>
+                <a href="contact.html" >Tarifs & réservations</a>
+                
+                <div class="mobile-contact-info">
+                    <p><strong>Hôtel Arc en Ciel</strong></p>
+                    <p>Avenue du Jardin Exotique<br>06360 Èze</p>
+                    <p><a href="tel:+33687203720">+33 6 87 20 37 20</a></p>
+                    <p><a href="mailto:reservation@arcencieleze.fr">reservation@arcencieleze.fr</a></p>
+                </div>
+            </nav>
+            <div class="lang-switcher">
+                
+                <a href="../en/index.html" class="">EN</a>
+                
+                <a href="../fr/index.html" class="active">FR</a>
+                
+            </div>
+            <div class="burger-menu" id="burgerMenu" aria-label="Toggle Navigation" aria-expanded="false" role="button" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        
+<section class="hero" style="background-image: url('../assets/img/Hero/hero.png');">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+        <h1 class="hero-title">Votre parenthèse enchantée à Èze</h1>
+        <p class="hero-subtitle">Entre terre et mer, un havre de paix au pied d'un des plus beaux villages de France.</p>
+        <div class="hero-widget glass">
+            <form action="contact.html" method="GET" class="booking-widget">
+                <div class="widget-field">
+                    <label for="booking-date">Arrivée</label>
+                    <input type="date" id="booking-date" name="arrival" required>
+                </div>
+                <div class="widget-field">
+                    <label for="departure-date">Départ</label>
+                    <input type="date" id="departure-date" name="departure" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Réserver en direct</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="intro section reveal">
+    <div class="container">
+        <div class="intro-grid">
+            <div class="intro-text">
+                <h2>Bienvenue à l'Arc en Ciel</h2>
+                <p class="mb-2">Idéalement placé sur la moyenne corniche entre Nice (8 Kms) et Monaco (6 Kms), Eze Village, lieu magique planté dans l'azur, a su préserver une atmosphère particulière d'authenticité et de traditions. L'Hôtel Arc en ciel est situé au pied de ce village, l'un des plus beaux de France. Cet établissement dispose également d'un bar (petite restauration rapide) et d'une boutique de cadeaux souvenirs.</p>
+                <a href="rooms.html" class="btn btn-outline">Les chambres</a>
+            </div>
+            <div class="intro-image">
+                <img src="../assets/img/Hotel-outside/hotel-front.webp" alt="Hotel Arc en Ciel Exterior" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Eze Village Section -->
+<section class="section bg-light reveal">
+    <div class="container">
+        <div class="intro-grid" style="direction: rtl;">
+            <div class="intro-text" style="direction: ltr;">
+                <h2>Découvrez Eze Village</h2>
+                <p>Village médiéval enchanteur, Eze est un lieu de villégiature idéal entre Nice et Monaco. Perché à 429 mètres d'altitude, il offre une vue exceptionnelle sur la mer. Une halte qui vous permettra de partir à pied à la découverte de cette cité ensoleillée et pittoresque.</p>
+            </div>
+            <div class="intro-image">
+                <img src="../assets/img/Hotel-outside/paysage environnant.webp" alt="Eze Village" loading="lazy" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Reviews Section -->
+<section class="section reveal">
+    <div class="container text-center">
+        <h2 class="mb-1">Avis de nos clients</h2>
+        <p class="mb-3" style="color: var(--color-primary); font-weight: 600;">Note de 9,2 par les couples pour un séjour à deux</p>
+        
+        <div class="reviews-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            
+            <div class="review-card glass" style="padding: 2rem; border-radius: var(--radius-md); text-align: left;">
+                <p style="font-style: italic; margin-bottom: 1.5rem; color: #555;">« Cecilia est full accueillante et tellement avenante. Elle fait tout pour que nous soyons bien heureux et satisfait de notre séjour ! Merci pour tes précieux conseils et peut-être à bientôt! ;-) »</p>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--color-primary); color: white; display: flex; align-items: center; justify-content: center; font-weight: bold;">
+                        N
+                    </div>
+                    <strong>Natalie</strong>
+                </div>
+            </div>
+            
+            <div class="review-card glass" style="padding: 2rem; border-radius: var(--radius-md); text-align: left;">
+                <p style="font-style: italic; margin-bottom: 1.5rem; color: #555;">« Personnel très sympathique. Emplacement idéal au pied du village. »</p>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--color-primary); color: white; display: flex; align-items: center; justify-content: center; font-weight: bold;">
+                        J
+                    </div>
+                    <strong>Jeremie</strong>
+                </div>
+            </div>
+            
+            <div class="review-card glass" style="padding: 2rem; border-radius: var(--radius-md); text-align: left;">
+                <p style="font-style: italic; margin-bottom: 1.5rem; color: #555;">« Accueil chaleureux et souriant, chambre propre, rien à dire. Merci !😊 Je recommande. »</p>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--color-primary); color: white; display: flex; align-items: center; justify-content: center; font-weight: bold;">
+                        C
+                    </div>
+                    <strong>Coralie</strong>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- Nearby Attractions Section -->
+<section class="section bg-light reveal">
+    <div class="container text-center">
+        <h2 class="mb-3">Activités et Plages à proximité</h2>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+            
+            <div class="glass" style="padding: 1rem 1.5rem; border-radius: 30px; border: 1px solid rgba(0,0,0,0.05); display: flex; align-items: center; gap: 0.5rem; font-weight: 500;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Plage d'Èze <span style="color: #888; font-size: 0.9em; margin-left: 0.5rem;">2,1 km</span>
+            </div>
+            
+            <div class="glass" style="padding: 1rem 1.5rem; border-radius: 30px; border: 1px solid rgba(0,0,0,0.05); display: flex; align-items: center; gap: 0.5rem; font-weight: 500;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Monaco <span style="color: #888; font-size: 0.9em; margin-left: 0.5rem;">6 km</span>
+            </div>
+            
+            <div class="glass" style="padding: 1rem 1.5rem; border-radius: 30px; border: 1px solid rgba(0,0,0,0.05); display: flex; align-items: center; gap: 0.5rem; font-weight: 500;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Nice (Place Garibaldi) <span style="color: #888; font-size: 0.9em; margin-left: 0.5rem;">9 km</span>
+            </div>
+            
+            <div class="glass" style="padding: 1rem 1.5rem; border-radius: 30px; border: 1px solid rgba(0,0,0,0.05); display: flex; align-items: center; gap: 0.5rem; font-weight: 500;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                MAMAC (Musée d'art moderne) <span style="color: #888; font-size: 0.9em; margin-left: 0.5rem;">9 km</span>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo mb-1">
+                        <img src="../assets/img/Logo/logo.png" alt="Hôtel Arc en Ciel" style="height: 60px;">
+                    </div>
+                    <p>Avenue du Jardin Exotique<br>06360 Èze</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <p class="contact-link-wrapper">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="footer-icon"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <a href="tel:+33687203720">+33 6 87 20 37 20</a>
+                    </p>
+                    <p class="contact-link-wrapper">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="footer-icon"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <a href="mailto:reservation@arcencieleze.fr">reservation@arcencieleze.fr</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 - Hôtel Arc en Ciel Eze. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Mobile CTA -->
+    <a href="contact.html" class="sticky-cta">Réserver en direct</a>
+
+    <script>
+        // Mobile Menu Toggle
+        const burger = document.getElementById('burgerMenu');
+        const nav = document.querySelector('.nav-links');
+        if(burger) {
+            burger.addEventListener('click', () => {
+                nav.classList.toggle('active');
+                burger.classList.toggle('active');
+                const isExpanded = burger.getAttribute('aria-expanded') === 'true';
+                burger.setAttribute('aria-expanded', !isExpanded);
+            });
+            // Keyboard accessibility
+            burger.addEventListener('keydown', (e) => {
+                if(e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    burger.click();
+                }
+            });
+        }
+
+        // Scroll Navbar Effect
+        const navbar = document.querySelector('.navbar');
+        if(navbar) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+        }
+
+        // Intersection Observer for scroll reveals
+        const revealElements = document.querySelectorAll('.reveal');
+        if(revealElements.length > 0) {
+            const revealOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+            const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, revealOptions);
+
+            revealElements.forEach(el => {
+                revealOnScroll.observe(el);
+            });
+        }
+    </script>
+</body>
+</html>

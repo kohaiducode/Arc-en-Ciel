@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero" style="background-image: url('../assets/img/Hero/hero.png');">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+        <h1 class="hero-title">{{ data.home.hero_title }}</h1>
+        <p class="hero-subtitle">{{ data.home.hero_subtitle }}</p>
+        <div class="hero-widget glass">
+            <form action="contact.html" method="GET" class="booking-widget">
+                <div class="widget-field">
+                    <label for="booking-date">Arrivée</label>
+                    <input type="date" id="booking-date" name="arrival" required>
+                </div>
+                <div class="widget-field">
+                    <label for="departure-date">Départ</label>
+                    <input type="date" id="departure-date" name="departure" required>
+                </div>
+                <button type="submit" class="btn btn-primary">{{ data.home.book_cta }}</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="intro section reveal">
+    <div class="container">
+        <div class="intro-grid">
+            <div class="intro-text">
+                <h2>{{ data.home.intro_title }}</h2>
+                <p class="mb-2">{{ data.home.intro_text }}</p>
+                <a href="rooms.html" class="btn btn-outline">{{ data.nav.rooms }}</a>
+            </div>
+            <div class="intro-image">
+                <img src="../assets/img/Hotel-outside/hotel-front.webp" alt="Hotel Arc en Ciel Exterior" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Eze Village Section -->
+<section class="section bg-light reveal">
+    <div class="container">
+        <div class="intro-grid" style="direction: rtl;">
+            <div class="intro-text" style="direction: ltr;">
+                <h2>{{ data.home.eze_section.title }}</h2>
+                <p>{{ data.home.eze_section.text }}</p>
+            </div>
+            <div class="intro-image">
+                <img src="../assets/img/Hotel-outside/paysage environnant.webp" alt="Eze Village" loading="lazy" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Reviews Section -->
+<section class="section reveal">
+    <div class="container text-center">
+        <h2 class="mb-1">{{ data.home.reviews_section.title }}</h2>
+        <p class="mb-3" style="color: var(--color-primary); font-weight: 600;">{{ data.home.reviews_section.subtitle }}</p>
+        
+        <div class="reviews-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            {% for review in data.home.reviews_section.reviews %}
+            <div class="review-card glass" style="padding: 2rem; border-radius: var(--radius-md); text-align: left;">
+                <p style="font-style: italic; margin-bottom: 1.5rem; color: #555;">{{ review.text }}</p>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--color-primary); color: white; display: flex; align-items: center; justify-content: center; font-weight: bold;">
+                        {{ review.name[0] }}
+                    </div>
+                    <strong>{{ review.name }}</strong>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Nearby Attractions Section -->
+<section class="section bg-light reveal">
+    <div class="container text-center">
+        <h2 class="mb-3">{{ data.home.nearby_section.title }}</h2>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+            {% for item in data.home.nearby_section['items'] %}
+            <div class="glass" style="padding: 1rem 1.5rem; border-radius: 30px; border: 1px solid rgba(0,0,0,0.05); display: flex; align-items: center; gap: 0.5rem; font-weight: 500;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                {{ item.name }} <span style="color: #888; font-size: 0.9em; margin-left: 0.5rem;">{{ item.dist }}</span>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}
