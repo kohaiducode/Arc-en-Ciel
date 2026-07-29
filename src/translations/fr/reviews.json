@@ -1,0 +1,20 @@
+[
+  {
+    "rating": 5,
+    "title": "Très accueillant",
+    "text": "Cecilia est full accueillante et tellement avenante. Elle fait tout pour que nous soyons bien heureux et satisfait de notre séjour ! Merci pour tes précieux conseils.",
+    "author": "Natalie (Canada)"
+  },
+  {
+    "rating": 5,
+    "title": "Excellent emplacement",
+    "text": "Emplacement idéal entre Nice et Monaco. La chambre était lumineuse et confortable.",
+    "author": "Jean-Pierre (France)"
+  },
+  {
+    "rating": 4,
+    "title": "Un séjour agréable",
+    "text": "Un hôtel charmant au pied d'Eze village. Le bar et la petite restauration sont très pratiques.",
+    "author": "Marie (Belgique)"
+  }
+]

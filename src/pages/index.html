@@ -1,0 +1,39 @@
+<section class="hero">
+    <div class="hero-content">
+        <h1>{{page.hero_title}}</h1>
+        <p>{{page.hero_subtitle}}</p>
+        <a href="{{global.booking_url}}" class="btn-primary" target="_blank" rel="noopener">Réserver Maintenant</a>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Pourquoi nous choisir ?</h2>
+        <div class="grid-3">
+            <div class="card" style="text-align: center;">
+                <div class="img-placeholder" style="height: 150px;">Image suggérée : Vue de l'hôtel ou d'Eze</div>
+                <h3 style="color: var(--primary);">Emplacement Idéal</h3>
+                <p>Au pied d'Eze Village, idéalement situé sur la corniche entre Nice et Monaco.</p>
+            </div>
+            <div class="card" style="text-align: center;">
+                <div class="img-placeholder" style="height: 150px;">Image suggérée : Intérieur d'une chambre lumineuse</div>
+                <h3 style="color: var(--primary);">Confort & Authenticité</h3>
+                <p>Des chambres climatisées, lumineuses, avec tout le confort moderne et un charme azuréen.</p>
+            </div>
+            <div class="card" style="text-align: center;">
+                <div class="img-placeholder" style="height: 150px;">Image suggérée : Plage, restaurant ou petit déjeuner</div>
+                <h3 style="color: var(--primary);">Services & Détente</h3>
+                <p>Profitez de notre petite restauration, de notre bar et d'un accès facile aux plages alentours.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background-color: var(--bg-white);">
+    <div class="container">
+        <h2 class="section-title">Ce que nos clients disent</h2>
+        <div class="grid-3">
+            {{reviews_html}}
+        </div>
+    </div>
+</section>

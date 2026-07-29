@@ -1,0 +1,29 @@
+[
+  {
+    "id": "chambre-standard",
+    "name": "Standard Room",
+    "area_sqm": 20,
+    "capacity": 2,
+    "amenities": ["Fast Wi-Fi", "Flat Screen TV", "Air Conditioning", "Safe"],
+    "image": "room-standard.webp",
+    "cta_text": "Book"
+  },
+  {
+    "id": "chambre-superieure",
+    "name": "Superior Room",
+    "area_sqm": 28,
+    "capacity": 2,
+    "amenities": ["Fast Wi-Fi", "4K Flat Screen TV", "Air Conditioning", "Mini-bar", "Garden View"],
+    "image": "room-superior.webp",
+    "cta_text": "Book"
+  },
+  {
+    "id": "suite-familiale",
+    "name": "Family Suite",
+    "area_sqm": 45,
+    "capacity": 4,
+    "amenities": ["Fast Wi-Fi", "2 Flat Screen TVs", "Air Conditioning", "Lounge Area", "Bathtub"],
+    "image": "suite-family.webp",
+    "cta_text": "Book"
+  }
+]

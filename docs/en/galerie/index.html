@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Hotel Arc en Ciel</title>
+    <meta name="description" content="Discover Hotel Arc en Ciel in pictures.">
+    
+    <!-- SEO Hreflang Tags -->
+    <link rel="alternate" hreflang="fr" href="https://arc-en-ciel.com/fr/" />
+<link rel="alternate" hreflang="en" href="https://arc-en-ciel.com/en/" />
+<link rel="alternate" hreflang="x-default" href="https://arc-en-ciel.com/fr/" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/Arc-en-Ciel/assets/css/style.css">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "Hotel", "name": "Hotel Arc en Ciel", "address": {"@type": "PostalAddress", "streetAddress": "123 Fictive Street, 75000 Paris, France"}, "telephone": "+33 1 23 45 67 89", "email": "contact@arcenciel-hotel.com", "url": "https://arc-en-ciel.com/en/", "aggregateRating": {"@type": "AggregateRating", "ratingValue": 4.7, "reviewCount": 3}}
+    </script>
+</head>
+<body>
+    <header class="site-header">
+    <div class="container">
+        <div class="logo">
+            <a href="/Arc-en-Ciel/en/"><img src="/Arc-en-Ciel/assets/images/logo.webp" alt="Arc en Ciel" style="max-height: 50px;"></a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="/Arc-en-Ciel/en/">Accueil</a></li>
+                <li><a href="/Arc-en-Ciel/en/chambres/">Chambres</a></li>
+                <li><a href="/Arc-en-Ciel/en/services/">Services</a></li>
+                <li><a href="/Arc-en-Ciel/en/galerie/">Galerie</a></li>
+                <li><a href="/Arc-en-Ciel/en/acces/">Accès & Tourisme</a></li>
+                <li><a href="/Arc-en-Ciel/en/contact/">Contact</a></li>
+                <!-- Mobile only contact info inside menu -->
+                <li class="mobile-contact">
+                    <a href="tel:+33 1 23 45 67 89" style="font-size:1.1rem; color: var(--primary);">📞 +33 1 23 45 67 89</a>
+                    <a href="mailto:contact@arcenciel-hotel.com" style="font-size:1.1rem; color: var(--primary);">✉️ contact@arcenciel-hotel.com</a>
+                    <span style="font-size:0.9rem; margin-top:10px;">📍 123 Fictive Street, 75000 Paris, France</span>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <div class="lang-switcher">
+                <a href="/Arc-en-Ciel/fr/">FR</a> | <a href="/Arc-en-Ciel/en/">EN</a>
+            </div>
+            <a href="/Arc-en-Ciel/en/contact/" class="btn-primary">Réserver</a>
+            <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+    
+    <main>
+        <section class="section">
+    <div class="container">
+        <h1 class="section-title">Photo Gallery</h1>
+        
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">Tout</button>
+            <button class="filter-btn" data-filter="chambres">Chambres</button>
+            <button class="filter-btn" data-filter="services">Services</button>
+            <button class="filter-btn" data-filter="exterieur">Extérieur</button>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+            <div class="gallery-item" data-category="chambres">
+                <img src="/Arc-en-Ciel/assets/images/Chambre lit (2).webp" alt="Chambre Standard" class="low-res-img" loading="lazy">
+            </div>
+            <div class="gallery-item" data-category="chambres">
+                <img src="/Arc-en-Ciel/assets/images/Chambre lit (3).webp" alt="Chambre Supérieure" class="low-res-img" loading="lazy">
+            </div>
+            <div class="gallery-item" data-category="chambres">
+                <img src="/Arc-en-Ciel/assets/images/Salle de bain.webp" alt="Salle de bain" class="low-res-img" loading="lazy">
+            </div>
+            <div class="gallery-item" data-category="services">
+                <img src="/Arc-en-Ciel/assets/images/Petit déjeuner.webp" alt="Petit Déjeuner" class="low-res-img" loading="lazy">
+            </div>
+            <div class="gallery-item" data-category="services">
+                <img src="/Arc-en-Ciel/assets/images/vue de dehors belle.webp" alt="Boutique" class="low-res-img" loading="lazy">
+            </div>
+            <div class="gallery-item" data-category="environs">
+                <img src="/Arc-en-Ciel/assets/images/paysage environnant.webp" alt="Eze Village" class="low-res-img" loading="lazy">
+            </div>
+            <div class="gallery-item" data-category="environs">
+                <img src="/Arc-en-Ciel/assets/images/Vue de dehors plus belle.webp" alt="Vue sur la mer" class="low-res-img" loading="lazy">
+            </div>
+            <div class="gallery-item" data-category="environs">
+                <img src="/Arc-en-Ciel/assets/images/emplacement carte dessinée main.webp" alt="Carte" class="low-res-img" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+    
+    <!-- Floating booking widget for mobile -->
+    <div class="floating-booking">
+        <a href="https://booking.com/hotel/arc-en-ciel" class="btn-primary" target="_blank" rel="noopener">Réserver</a>
+    </div>
+
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col footer-logo">
+                <img src="/Arc-en-Ciel/assets/images/logo.webp" alt="Arc en Ciel">
+                <h4>Hotel Arc en Ciel</h4>
+                <p style="color: var(--border);">Une halte reposante au pied du village d'Eze, idéalement situé entre Nice et Monaco.</p>
+                <div class="social-links" style="justify-content: flex-start;">
+                    <!-- Placeholders for future social links if needed -->
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <a href="/Arc-en-Ciel/en/">Accueil</a>
+                <a href="/Arc-en-Ciel/en/chambres/">Chambres</a>
+                <a href="/Arc-en-Ciel/en/services/">Services</a>
+                <a href="/Arc-en-Ciel/en/acces/">Accès & Tourisme</a>
+                <a href="/Arc-en-Ciel/en/contact/">Contact & Réservation</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>📍 123 Fictive Street, 75000 Paris, France</p>
+                <p>📞 +33 1 23 45 67 89</p>
+                <p>✉️ contact@arcenciel-hotel.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 Hotel Arc en Ciel. Tous droits réservés. | <a href="#" style="color: #6B7280; text-decoration: underline;">Mentions légales</a></p>
+        </div>
+    </div>
+</footer>
+
+    
+    <script src="/Arc-en-Ciel/assets/js/main.js" defer></script>
+</body>
+</html>

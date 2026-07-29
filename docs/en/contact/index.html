@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Hotel Arc en Ciel</title>
+    <meta name="description" content="Contact Hotel Arc en Ciel for any reservation or question.">
+    
+    <!-- SEO Hreflang Tags -->
+    <link rel="alternate" hreflang="fr" href="https://arc-en-ciel.com/fr/" />
+<link rel="alternate" hreflang="en" href="https://arc-en-ciel.com/en/" />
+<link rel="alternate" hreflang="x-default" href="https://arc-en-ciel.com/fr/" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/Arc-en-Ciel/assets/css/style.css">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "Hotel", "name": "Hotel Arc en Ciel", "address": {"@type": "PostalAddress", "streetAddress": "123 Fictive Street, 75000 Paris, France"}, "telephone": "+33 1 23 45 67 89", "email": "contact@arcenciel-hotel.com", "url": "https://arc-en-ciel.com/en/", "aggregateRating": {"@type": "AggregateRating", "ratingValue": 4.7, "reviewCount": 3}}
+    </script>
+</head>
+<body>
+    <header class="site-header">
+    <div class="container">
+        <div class="logo">
+            <a href="/Arc-en-Ciel/en/"><img src="/Arc-en-Ciel/assets/images/logo.webp" alt="Arc en Ciel" style="max-height: 50px;"></a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="/Arc-en-Ciel/en/">Accueil</a></li>
+                <li><a href="/Arc-en-Ciel/en/chambres/">Chambres</a></li>
+                <li><a href="/Arc-en-Ciel/en/services/">Services</a></li>
+                <li><a href="/Arc-en-Ciel/en/galerie/">Galerie</a></li>
+                <li><a href="/Arc-en-Ciel/en/acces/">Accès & Tourisme</a></li>
+                <li><a href="/Arc-en-Ciel/en/contact/">Contact</a></li>
+                <!-- Mobile only contact info inside menu -->
+                <li class="mobile-contact">
+                    <a href="tel:+33 1 23 45 67 89" style="font-size:1.1rem; color: var(--primary);">📞 +33 1 23 45 67 89</a>
+                    <a href="mailto:contact@arcenciel-hotel.com" style="font-size:1.1rem; color: var(--primary);">✉️ contact@arcenciel-hotel.com</a>
+                    <span style="font-size:0.9rem; margin-top:10px;">📍 123 Fictive Street, 75000 Paris, France</span>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <div class="lang-switcher">
+                <a href="/Arc-en-Ciel/fr/">FR</a> | <a href="/Arc-en-Ciel/en/">EN</a>
+            </div>
+            <a href="/Arc-en-Ciel/en/contact/" class="btn-primary">Réserver</a>
+            <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+    
+    <main>
+        <section class="section">
+    <div class="container">
+        <h1 class="section-title">Contact Us</h1>
+        
+        <div class="grid-2">
+            <div>
+                <h2 style="color: var(--accent);">Envoyez-nous un message</h2>
+                <form id="contactForm" class="contact-form">
+                    <!-- Remplacer la clé Web3Forms par une vraie clé -->
+                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                    
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" class="form-control" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary" id="submitBtn">Send</button>
+                    <p id="formResult" style="margin-top: 10px; display: none;"></p>
+                </form>
+            </div>
+            
+            <div>
+                <h2 style="color: var(--accent);">Nos Coordonnées</h2>
+                <p><strong>Adresse :</strong> 123 Fictive Street, 75000 Paris, France</p>
+                <p><strong>Téléphone :</strong> <a href="tel:+33 1 23 45 67 89">+33 1 23 45 67 89</a></p>
+                <p><strong>Email :</strong> <a href="mailto:contact@arcenciel-hotel.com">contact@arcenciel-hotel.com</a></p>
+                
+                <div style="margin-top: var(--space-lg); border-radius: 8px; overflow: hidden; box-shadow: var(--shadow-sm);">
+                    <!-- Placeholder map -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937595!2d2.292292615674403!3d48.85837007928746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1628172935272!5m2!1sfr!2sfr" 
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+    
+    <!-- Floating booking widget for mobile -->
+    <div class="floating-booking">
+        <a href="https://booking.com/hotel/arc-en-ciel" class="btn-primary" target="_blank" rel="noopener">Réserver</a>
+    </div>
+
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col footer-logo">
+                <img src="/Arc-en-Ciel/assets/images/logo.webp" alt="Arc en Ciel">
+                <h4>Hotel Arc en Ciel</h4>
+                <p style="color: var(--border);">Une halte reposante au pied du village d'Eze, idéalement situé entre Nice et Monaco.</p>
+                <div class="social-links" style="justify-content: flex-start;">
+                    <!-- Placeholders for future social links if needed -->
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <a href="/Arc-en-Ciel/en/">Accueil</a>
+                <a href="/Arc-en-Ciel/en/chambres/">Chambres</a>
+                <a href="/Arc-en-Ciel/en/services/">Services</a>
+                <a href="/Arc-en-Ciel/en/acces/">Accès & Tourisme</a>
+                <a href="/Arc-en-Ciel/en/contact/">Contact & Réservation</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>📍 123 Fictive Street, 75000 Paris, France</p>
+                <p>📞 +33 1 23 45 67 89</p>
+                <p>✉️ contact@arcenciel-hotel.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 Hotel Arc en Ciel. Tous droits réservés. | <a href="#" style="color: #6B7280; text-decoration: underline;">Mentions légales</a></p>
+        </div>
+    </div>
+</footer>
+
+    
+    <script src="/Arc-en-Ciel/assets/js/main.js" defer></script>
+</body>
+</html>

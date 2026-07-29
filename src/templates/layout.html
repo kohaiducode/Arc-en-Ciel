@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{page.seo_title}}</title>
+    <meta name="description" content="{{page.seo_description}}">
+    
+    <!-- SEO Hreflang Tags -->
+    {{seo_hreflang}}
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{base_path}}/assets/css/style.css">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {{seo_json_ld}}
+    </script>
+</head>
+<body>
+    {{header}}
+    
+    <main>
+        {{content}}
+    </main>
+    
+    <!-- Floating booking widget for mobile -->
+    <div class="floating-booking">
+        <a href="{{global.booking_url}}" class="btn-primary" target="_blank" rel="noopener">Réserver</a>
+    </div>
+
+    {{footer}}
+    
+    <script src="{{base_path}}/assets/js/main.js" defer></script>
+</body>
+</html>

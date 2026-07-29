@@ -1,0 +1,29 @@
+[
+  {
+    "id": "chambre-basse-saison",
+    "name": "Chambre Double (Basse Saison)",
+    "area_sqm": 15,
+    "capacity": 2,
+    "amenities": ["Climatisation", "Télévision TNT", "Wifi Gratuit", "Douche & Toilettes"],
+    "image": "chambre lit.webp",
+    "cta_text": "À partir de 115€"
+  },
+  {
+    "id": "chambre-moyenne-saison",
+    "name": "Chambre Double (Moyenne Saison)",
+    "area_sqm": 15,
+    "capacity": 2,
+    "amenities": ["Climatisation", "Télévision TNT", "Wifi Gratuit", "Douche & Toilettes"],
+    "image": "Chambre lit (2).webp",
+    "cta_text": "À partir de 130€"
+  },
+  {
+    "id": "chambre-haute-saison",
+    "name": "Chambre Double (Haute Saison)",
+    "area_sqm": 15,
+    "capacity": 2,
+    "amenities": ["Climatisation", "Télévision TNT", "Wifi Gratuit", "Douche & Toilettes"],
+    "image": "Chambre lit (3).webp",
+    "cta_text": "À partir de 150€"
+  }
+]

@@ -1,0 +1,69 @@
+{
+  "index": {
+    "title": "Home",
+    "seo_title": "Hotel Arc en Ciel | Your unforgettable stay",
+    "seo_description": "Discover Hotel Arc en Ciel, a charming establishment for an unforgettable stay.",
+    "hero_title": "Welcome to Arc en Ciel",
+    "hero_subtitle": "Elegance and comfort at your fingertips"
+  },
+  "chambres": {
+    "title": "Our Rooms",
+    "seo_title": "Rooms - Hôtel Arc en Ciel Eze",
+    "seo_description": "Air-conditioned, bright rooms with all comfort in Eze Village.",
+    "seasons_title": "Rates & Seasons",
+    "seasons": [
+      {"name": "Low season (115€)", "months": "January, February, March, November, December"},
+      {"name": "Mid season (130€)", "months": "April, May, June, September, October"},
+      {"name": "High season (150€)", "months": "July, August"}
+    ],
+    "practical_info_title": "Practical Information",
+    "practical_info": [
+      {"icon": "🕒", "title": "Check-in/out", "text": "Check-in from 2:00 PM. Check-out by 11:00 AM."},
+      {"icon": "🛎️", "title": "Reception", "text": "Open from 8:30 AM to 6:30 PM."},
+      {"icon": "💶", "title": "City Tax", "text": "€2.30 per night and per person."},
+      {"icon": "📅", "title": "Booking conditions", "text": "All reservations require a 1-night deposit. Free cancellation up to 7 days before arrival."},
+      {"icon": "🐾", "title": "Pets", "text": "Pets are not allowed (although we love them)."}
+    ]
+  },
+  "acces": {
+    "title": "Access & Tourism",
+    "seo_title": "Access and Tourism - Hôtel Arc en Ciel Eze",
+    "seo_description": "How to get to Hôtel Arc en Ciel in Eze Village. Discover nearby beaches and attractions.",
+    "intro": "Ideally located on the middle corniche between Nice (8 km) and Monaco (6 km), Eze Village is a magical place planted in the azure, preserving an authentic atmosphere.",
+    "access_title": "How to get here?",
+    "access_modes": [
+      {"mode": "By Car", "desc": "A8 highway exit 57 (La Turbie), take the direction of Eze Village. Parking near the tourist office."},
+      {"mode": "By Plane", "desc": "Nice Côte d'Azur international airport (25 km). Transfer by taxi or bus possible."},
+      {"mode": "By Bus", "desc": "Regional buses from Nice airport. Stop at 50m from the hotel."},
+      {"mode": "By Train", "desc": "Nearest train stations: Nice (8 km) or Monaco (7 km). Eze station at 2.2 km."}
+    ],
+    "tourism_title": "To discover nearby",
+    "attractions": [
+      {"name": "Eze Village & Tourist Office", "distance": "On site"},
+      {"name": "Èze Beach", "distance": "2.1 km"},
+      {"name": "Criques du Cap Estel Beach", "distance": "2.7 km"},
+      {"name": "Mala Beach", "distance": "3.3 km"},
+      {"name": "Garibaldi Square (Nice)", "distance": "9 km"},
+      {"name": "Monaco (Heliport)", "distance": "6 km"}
+    ]
+  },
+  "services": {
+    "title": "Our Services",
+    "seo_title": "Services - Hotel Arc en Ciel",
+    "seo_description": "Enjoy our restaurant, spa and other activities."
+  },
+  "galerie": {
+    "title": "Photo Gallery",
+    "seo_title": "Gallery - Hotel Arc en Ciel",
+    "seo_description": "Discover Hotel Arc en Ciel in pictures."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "seo_title": "Contact - Hotel Arc en Ciel",
+    "seo_description": "Contact Hotel Arc en Ciel for any reservation or question.",
+    "form_name": "Your Name",
+    "form_email": "Your Email",
+    "form_message": "Your Message",
+    "form_submit": "Send"
+  }
+}

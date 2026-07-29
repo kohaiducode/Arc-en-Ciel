@@ -1,0 +1,39 @@
+<section class="section">
+    <div class="container">
+        <h1 class="section-title">{{page.title}}</h1>
+        
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">Tout</button>
+            <button class="filter-btn" data-filter="chambres">Chambres</button>
+            <button class="filter-btn" data-filter="services">Services</button>
+            <button class="filter-btn" data-filter="exterieur">Extérieur</button>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+            <div class="gallery-item" data-category="chambres">
+                <img src="{{base_path}}/assets/images/Chambre lit (2).webp" alt="Chambre Standard" class="low-res-img" loading="lazy">
+            </div>
+            <div class="gallery-item" data-category="chambres">
+                <img src="{{base_path}}/assets/images/Chambre lit (3).webp" alt="Chambre Supérieure" class="low-res-img" loading="lazy">
+            </div>
+            <div class="gallery-item" data-category="chambres">
+                <img src="{{base_path}}/assets/images/Salle de bain.webp" alt="Salle de bain" class="low-res-img" loading="lazy">
+            </div>
+            <div class="gallery-item" data-category="services">
+                <img src="{{base_path}}/assets/images/Petit déjeuner.webp" alt="Petit Déjeuner" class="low-res-img" loading="lazy">
+            </div>
+            <div class="gallery-item" data-category="services">
+                <img src="{{base_path}}/assets/images/vue de dehors belle.webp" alt="Boutique" class="low-res-img" loading="lazy">
+            </div>
+            <div class="gallery-item" data-category="environs">
+                <img src="{{base_path}}/assets/images/paysage environnant.webp" alt="Eze Village" class="low-res-img" loading="lazy">
+            </div>
+            <div class="gallery-item" data-category="environs">
+                <img src="{{base_path}}/assets/images/Vue de dehors plus belle.webp" alt="Vue sur la mer" class="low-res-img" loading="lazy">
+            </div>
+            <div class="gallery-item" data-category="environs">
+                <img src="{{base_path}}/assets/images/emplacement carte dessinée main.webp" alt="Carte" class="low-res-img" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>

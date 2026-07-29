@@ -1,0 +1,22 @@
+<section class="section">
+    <div class="container">
+        <h1 class="section-title">{{page.title}}</h1>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto var(--space-xl) auto; font-size: 1.2rem;">
+            Plongez dans le confort de nos chambres élégamment décorées. Chaque espace a été pensé pour vous offrir un séjour inoubliable, alliant modernité et charme authentique.
+        </p>
+        
+        <div class="grid-2">
+            {{rooms_html}}
+        </div>
+        
+        <h2 class="section-title" style="margin-top: var(--space-2xl);">{{page.seasons_title}}</h2>
+        <div class="grid-3" style="margin-bottom: var(--space-2xl);">
+            {{seasons_html}}
+        </div>
+
+        <h2 class="section-title">{{page.practical_info_title}}</h2>
+        <div class="grid-2">
+            {{practical_info_html}}
+        </div>
+    </div>
+</section>
